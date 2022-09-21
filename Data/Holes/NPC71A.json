@@ -1,0 +1,3432 @@
+{
+  "holeRowid": 8000023902,
+  "holeId": "NPC71A",
+  "project": "AA\u002B",
+  "office": "Auckland",
+  "depth": 305.000,
+  "depthUnits": "METERS",
+  "source": "GOLDEN",
+  "startDate": "2021-02-24T00:00:00",
+  "endDate": "2021-03-08T00:00:00",
+  "description": "PLATFORM:YAP-OP-010 / LINE:UNKNOWN / AZIMUT:90.000 / INCL:-54.000 / DEPTH:300.000 / USUARIO:NMC\\01101566",
+  "x": 40777.50413952,
+  "y": 53969.3437248,
+  "z": 8880.152016038,
+  "lat": 38.726286054,
+  "long": -105.1430401829,
+  "elevation": 2706.774,
+  "status": "IN_PROGRESS",
+  "surveyGroups": [
+    {
+      "priority": 0.86,
+      "surveyType": "PLANNED",
+      "surveys": [
+        {
+          "surveyRowid": 8000362926,
+          "depth": 0.000,
+          "inclination": -54.000,
+          "aziTrueNth": 90.000,
+          "description": "SURVEY PLANEADO DATOS REGISTRADOS EN CREACION TALADRO POR USUARIO:NMC\\01101566",
+          "utcDateAdded": "2021-02-25T11:52:44.767",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.87,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363214,
+          "depth": 0.000,
+          "inclination": -54.040,
+          "aziTrueNth": 90.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363215,
+          "depth": 5.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.740,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.493",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363216,
+          "depth": 10.000,
+          "inclination": -53.560,
+          "aziTrueNth": 90.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.54",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.88,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363217,
+          "depth": 0.000,
+          "inclination": -53.960,
+          "aziTrueNth": 90.420,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.65",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363218,
+          "depth": 5.000,
+          "inclination": -53.800,
+          "aziTrueNth": 90.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.713",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363219,
+          "depth": 10.000,
+          "inclination": -53.580,
+          "aziTrueNth": 90.960,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-10m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.89,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363220,
+          "depth": 0.000,
+          "inclination": -53.910,
+          "aziTrueNth": 89.360,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.87",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363221,
+          "depth": 5.000,
+          "inclination": -53.750,
+          "aziTrueNth": 89.800,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.917",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363222,
+          "depth": 10.000,
+          "inclination": -53.430,
+          "aziTrueNth": 89.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:06.98",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363223,
+          "depth": 15.000,
+          "inclination": -53.350,
+          "aziTrueNth": 89.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.027",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363224,
+          "depth": 20.000,
+          "inclination": -53.540,
+          "aziTrueNth": 89.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.07",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363225,
+          "depth": 25.000,
+          "inclination": -53.550,
+          "aziTrueNth": 89.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.133",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363226,
+          "depth": 30.000,
+          "inclination": -53.650,
+          "aziTrueNth": 89.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.18",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363227,
+          "depth": 35.000,
+          "inclination": -53.760,
+          "aziTrueNth": 89.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.23",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363228,
+          "depth": 40.000,
+          "inclination": -53.810,
+          "aziTrueNth": 89.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.277",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.90,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363229,
+          "depth": 0.000,
+          "inclination": -53.860,
+          "aziTrueNth": 89.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.4",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363230,
+          "depth": 5.000,
+          "inclination": -53.710,
+          "aziTrueNth": 89.840,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.447",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363231,
+          "depth": 10.000,
+          "inclination": -53.370,
+          "aziTrueNth": 89.830,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.493",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363232,
+          "depth": 15.000,
+          "inclination": -53.310,
+          "aziTrueNth": 89.720,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.557",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363233,
+          "depth": 20.000,
+          "inclination": -53.520,
+          "aziTrueNth": 89.570,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.603",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363234,
+          "depth": 25.000,
+          "inclination": -53.520,
+          "aziTrueNth": 89.610,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.667",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363235,
+          "depth": 30.000,
+          "inclination": -53.640,
+          "aziTrueNth": 89.850,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.713",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363236,
+          "depth": 35.000,
+          "inclination": -53.750,
+          "aziTrueNth": 89.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.777",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363237,
+          "depth": 40.000,
+          "inclination": -53.790,
+          "aziTrueNth": 89.870,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-40m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.837",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.91,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363238,
+          "depth": 0.000,
+          "inclination": -53.970,
+          "aziTrueNth": 90.220,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:07.98",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363239,
+          "depth": 5.000,
+          "inclination": -53.780,
+          "aziTrueNth": 90.490,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.04",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363240,
+          "depth": 10.000,
+          "inclination": -53.470,
+          "aziTrueNth": 90.700,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.087",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363241,
+          "depth": 15.000,
+          "inclination": -53.400,
+          "aziTrueNth": 90.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.133",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363242,
+          "depth": 20.000,
+          "inclination": -53.570,
+          "aziTrueNth": 90.320,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.18",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363243,
+          "depth": 25.000,
+          "inclination": -53.580,
+          "aziTrueNth": 90.370,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.23",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363244,
+          "depth": 30.000,
+          "inclination": -53.620,
+          "aziTrueNth": 90.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.277",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363245,
+          "depth": 35.000,
+          "inclination": -53.770,
+          "aziTrueNth": 90.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.323",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363246,
+          "depth": 40.000,
+          "inclination": -53.850,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.383",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363247,
+          "depth": 45.000,
+          "inclination": -53.890,
+          "aziTrueNth": 90.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363248,
+          "depth": 50.000,
+          "inclination": -53.950,
+          "aziTrueNth": 90.460,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.48",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363249,
+          "depth": 55.000,
+          "inclination": -53.950,
+          "aziTrueNth": 90.480,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.527",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363250,
+          "depth": 60.000,
+          "inclination": -53.920,
+          "aziTrueNth": 90.490,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.573",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363251,
+          "depth": 65.000,
+          "inclination": -54.020,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.62",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363252,
+          "depth": 70.000,
+          "inclination": -54.160,
+          "aziTrueNth": 90.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.667",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363253,
+          "depth": 75.000,
+          "inclination": -54.190,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.713",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.92,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363254,
+          "depth": 0.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363255,
+          "depth": 5.000,
+          "inclination": -53.710,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.917",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363256,
+          "depth": 10.000,
+          "inclination": -53.400,
+          "aziTrueNth": 90.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:08.963",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363257,
+          "depth": 15.000,
+          "inclination": -53.350,
+          "aziTrueNth": 90.700,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.01",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363258,
+          "depth": 20.000,
+          "inclination": -53.540,
+          "aziTrueNth": 90.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363259,
+          "depth": 25.000,
+          "inclination": -53.550,
+          "aziTrueNth": 90.490,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.12",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363260,
+          "depth": 30.000,
+          "inclination": -53.580,
+          "aziTrueNth": 90.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.167",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363261,
+          "depth": 35.000,
+          "inclination": -53.730,
+          "aziTrueNth": 90.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.213",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363262,
+          "depth": 40.000,
+          "inclination": -53.800,
+          "aziTrueNth": 90.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363263,
+          "depth": 45.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.660,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.307",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363264,
+          "depth": 50.000,
+          "inclination": -53.950,
+          "aziTrueNth": 90.550,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.353",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363265,
+          "depth": 55.000,
+          "inclination": -53.950,
+          "aziTrueNth": 90.570,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.4",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363266,
+          "depth": 60.000,
+          "inclination": -53.920,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.447",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363267,
+          "depth": 65.000,
+          "inclination": -54.020,
+          "aziTrueNth": 90.720,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.493",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363268,
+          "depth": 70.000,
+          "inclination": -54.170,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.54",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363269,
+          "depth": 75.000,
+          "inclination": -54.200,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-75m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.603",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.93,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363270,
+          "depth": 0.000,
+          "inclination": -54.150,
+          "aziTrueNth": 90.180,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.743",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363271,
+          "depth": 5.000,
+          "inclination": -53.910,
+          "aziTrueNth": 90.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.79",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363272,
+          "depth": 10.000,
+          "inclination": -53.600,
+          "aziTrueNth": 90.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.837",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363273,
+          "depth": 15.000,
+          "inclination": -53.500,
+          "aziTrueNth": 90.540,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.883",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363274,
+          "depth": 20.000,
+          "inclination": -53.720,
+          "aziTrueNth": 90.380,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.93",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363275,
+          "depth": 25.000,
+          "inclination": -53.710,
+          "aziTrueNth": 90.400,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:09.98",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363276,
+          "depth": 30.000,
+          "inclination": -53.780,
+          "aziTrueNth": 90.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363277,
+          "depth": 35.000,
+          "inclination": -53.940,
+          "aziTrueNth": 90.820,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.103",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363278,
+          "depth": 40.000,
+          "inclination": -54.000,
+          "aziTrueNth": 90.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.15",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363279,
+          "depth": 45.000,
+          "inclination": -54.080,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.213",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363280,
+          "depth": 50.000,
+          "inclination": -54.140,
+          "aziTrueNth": 90.510,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363281,
+          "depth": 55.000,
+          "inclination": -54.130,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.323",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363282,
+          "depth": 60.000,
+          "inclination": -54.090,
+          "aziTrueNth": 90.550,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.37",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363283,
+          "depth": 65.000,
+          "inclination": -54.180,
+          "aziTrueNth": 90.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.417",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363284,
+          "depth": 70.000,
+          "inclination": -54.340,
+          "aziTrueNth": 90.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.463",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363285,
+          "depth": 75.000,
+          "inclination": -54.450,
+          "aziTrueNth": 90.740,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.51",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363286,
+          "depth": 80.000,
+          "inclination": -54.370,
+          "aziTrueNth": 90.840,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.557",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363287,
+          "depth": 85.000,
+          "inclination": -54.320,
+          "aziTrueNth": 91.010,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.62",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363288,
+          "depth": 90.000,
+          "inclination": -54.440,
+          "aziTrueNth": 91.440,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.667",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363289,
+          "depth": 95.000,
+          "inclination": -54.630,
+          "aziTrueNth": 91.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.713",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363290,
+          "depth": 100.000,
+          "inclination": -54.810,
+          "aziTrueNth": 91.940,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363291,
+          "depth": 105.000,
+          "inclination": -54.900,
+          "aziTrueNth": 92.090,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363292,
+          "depth": 110.000,
+          "inclination": -54.940,
+          "aziTrueNth": 92.180,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363293,
+          "depth": 115.000,
+          "inclination": -55.010,
+          "aziTrueNth": 92.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.9",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363294,
+          "depth": 120.000,
+          "inclination": -54.980,
+          "aziTrueNth": 92.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.947",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363295,
+          "depth": 125.000,
+          "inclination": -54.920,
+          "aziTrueNth": 93.040,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:10.993",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363296,
+          "depth": 130.000,
+          "inclination": -54.910,
+          "aziTrueNth": 93.110,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.94,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363297,
+          "depth": 0.000,
+          "inclination": -53.960,
+          "aziTrueNth": 90.370,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.197",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363298,
+          "depth": 5.000,
+          "inclination": -53.730,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.243",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363299,
+          "depth": 10.000,
+          "inclination": -53.420,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.29",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363300,
+          "depth": 15.000,
+          "inclination": -53.430,
+          "aziTrueNth": 90.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.337",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363301,
+          "depth": 20.000,
+          "inclination": -53.650,
+          "aziTrueNth": 90.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.383",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363302,
+          "depth": 25.000,
+          "inclination": -53.650,
+          "aziTrueNth": 90.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363303,
+          "depth": 30.000,
+          "inclination": -53.730,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.48",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363304,
+          "depth": 35.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.890,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.527",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363305,
+          "depth": 40.000,
+          "inclination": -53.860,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.587",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363306,
+          "depth": 45.000,
+          "inclination": -53.990,
+          "aziTrueNth": 90.520,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.633",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363307,
+          "depth": 50.000,
+          "inclination": -54.090,
+          "aziTrueNth": 90.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.697",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363308,
+          "depth": 55.000,
+          "inclination": -54.080,
+          "aziTrueNth": 90.570,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.743",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363309,
+          "depth": 60.000,
+          "inclination": -54.060,
+          "aziTrueNth": 90.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.79",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363310,
+          "depth": 65.000,
+          "inclination": -54.180,
+          "aziTrueNth": 90.680,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363311,
+          "depth": 70.000,
+          "inclination": -54.330,
+          "aziTrueNth": 90.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.9",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363312,
+          "depth": 75.000,
+          "inclination": -54.400,
+          "aziTrueNth": 90.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.947",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363313,
+          "depth": 80.000,
+          "inclination": -54.320,
+          "aziTrueNth": 90.800,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:11.993",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363314,
+          "depth": 85.000,
+          "inclination": -54.270,
+          "aziTrueNth": 90.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363315,
+          "depth": 90.000,
+          "inclination": -54.370,
+          "aziTrueNth": 91.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.103",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363316,
+          "depth": 95.000,
+          "inclination": -54.600,
+          "aziTrueNth": 91.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.15",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363317,
+          "depth": 100.000,
+          "inclination": -54.810,
+          "aziTrueNth": 91.850,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.213",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363318,
+          "depth": 105.000,
+          "inclination": -54.920,
+          "aziTrueNth": 92.090,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363319,
+          "depth": 110.000,
+          "inclination": -54.960,
+          "aziTrueNth": 92.210,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.307",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363320,
+          "depth": 115.000,
+          "inclination": -55.030,
+          "aziTrueNth": 92.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.353",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363321,
+          "depth": 120.000,
+          "inclination": -55.010,
+          "aziTrueNth": 92.800,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.4",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363322,
+          "depth": 125.000,
+          "inclination": -54.970,
+          "aziTrueNth": 93.040,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.463",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363323,
+          "depth": 130.000,
+          "inclination": -54.930,
+          "aziTrueNth": 93.110,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-130m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-01T23:11:12.51",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.95,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363643,
+          "depth": 0.000,
+          "inclination": -53.730,
+          "aziTrueNth": 90.370,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363644,
+          "depth": 5.000,
+          "inclination": -53.700,
+          "aziTrueNth": 90.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363645,
+          "depth": 10.000,
+          "inclination": -53.510,
+          "aziTrueNth": 90.750,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363646,
+          "depth": 15.000,
+          "inclination": -53.440,
+          "aziTrueNth": 90.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.867",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363647,
+          "depth": 20.000,
+          "inclination": -53.620,
+          "aziTrueNth": 90.570,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.913",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363648,
+          "depth": 25.000,
+          "inclination": -53.640,
+          "aziTrueNth": 90.510,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:30.96",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363649,
+          "depth": 30.000,
+          "inclination": -53.690,
+          "aziTrueNth": 90.660,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.01",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363650,
+          "depth": 35.000,
+          "inclination": -53.830,
+          "aziTrueNth": 90.770,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363651,
+          "depth": 40.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.103",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363652,
+          "depth": 45.000,
+          "inclination": -53.990,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.15",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363653,
+          "depth": 50.000,
+          "inclination": -54.070,
+          "aziTrueNth": 90.610,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.21",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363654,
+          "depth": 55.000,
+          "inclination": -54.070,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363655,
+          "depth": 60.000,
+          "inclination": -54.030,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.307",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363656,
+          "depth": 65.000,
+          "inclination": -54.150,
+          "aziTrueNth": 90.720,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.353",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363657,
+          "depth": 70.000,
+          "inclination": -54.330,
+          "aziTrueNth": 90.780,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.413",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363658,
+          "depth": 75.000,
+          "inclination": -54.410,
+          "aziTrueNth": 90.920,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.46",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363659,
+          "depth": 80.000,
+          "inclination": -54.330,
+          "aziTrueNth": 90.960,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.51",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363660,
+          "depth": 85.000,
+          "inclination": -54.250,
+          "aziTrueNth": 91.070,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.557",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363661,
+          "depth": 90.000,
+          "inclination": -54.370,
+          "aziTrueNth": 91.340,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.603",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363662,
+          "depth": 95.000,
+          "inclination": -54.590,
+          "aziTrueNth": 91.600,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.663",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363663,
+          "depth": 100.000,
+          "inclination": -54.780,
+          "aziTrueNth": 91.870,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363664,
+          "depth": 105.000,
+          "inclination": -54.950,
+          "aziTrueNth": 92.090,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.773",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363665,
+          "depth": 110.000,
+          "inclination": -55.100,
+          "aziTrueNth": 92.240,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.837",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363666,
+          "depth": 115.000,
+          "inclination": -55.080,
+          "aziTrueNth": 92.360,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.883",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363667,
+          "depth": 120.000,
+          "inclination": -55.090,
+          "aziTrueNth": 92.740,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.947",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363668,
+          "depth": 125.000,
+          "inclination": -55.090,
+          "aziTrueNth": 92.910,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:31.993",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363669,
+          "depth": 130.000,
+          "inclination": -55.020,
+          "aziTrueNth": 93.360,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.04",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363670,
+          "depth": 135.000,
+          "inclination": -55.030,
+          "aziTrueNth": 93.230,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.087",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363671,
+          "depth": 140.000,
+          "inclination": -55.090,
+          "aziTrueNth": 92.190,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.133",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363672,
+          "depth": 145.000,
+          "inclination": -55.200,
+          "aziTrueNth": 92.350,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.18",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363673,
+          "depth": 150.000,
+          "inclination": -55.290,
+          "aziTrueNth": 93.590,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.227",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363674,
+          "depth": 155.000,
+          "inclination": -55.430,
+          "aziTrueNth": 94.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.29",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363675,
+          "depth": 160.000,
+          "inclination": -55.440,
+          "aziTrueNth": 95.140,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.337",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.96,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363676,
+          "depth": 0.000,
+          "inclination": -53.830,
+          "aziTrueNth": 90.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.51",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363677,
+          "depth": 5.000,
+          "inclination": -53.770,
+          "aziTrueNth": 90.720,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.57",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363678,
+          "depth": 10.000,
+          "inclination": -53.530,
+          "aziTrueNth": 90.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.617",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363679,
+          "depth": 15.000,
+          "inclination": -53.490,
+          "aziTrueNth": 90.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.663",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363680,
+          "depth": 20.000,
+          "inclination": -53.680,
+          "aziTrueNth": 90.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363681,
+          "depth": 25.000,
+          "inclination": -53.700,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363682,
+          "depth": 30.000,
+          "inclination": -53.770,
+          "aziTrueNth": 90.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363683,
+          "depth": 35.000,
+          "inclination": -53.910,
+          "aziTrueNth": 90.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363684,
+          "depth": 40.000,
+          "inclination": -53.950,
+          "aziTrueNth": 90.920,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.913",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363685,
+          "depth": 45.000,
+          "inclination": -54.030,
+          "aziTrueNth": 90.660,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:32.96",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363686,
+          "depth": 50.000,
+          "inclination": -54.110,
+          "aziTrueNth": 90.680,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.01",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363687,
+          "depth": 55.000,
+          "inclination": -54.100,
+          "aziTrueNth": 90.660,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363688,
+          "depth": 60.000,
+          "inclination": -54.080,
+          "aziTrueNth": 90.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.117",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363689,
+          "depth": 65.000,
+          "inclination": -54.190,
+          "aziTrueNth": 90.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.163",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363690,
+          "depth": 70.000,
+          "inclination": -54.380,
+          "aziTrueNth": 90.880,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.21",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363691,
+          "depth": 75.000,
+          "inclination": -54.460,
+          "aziTrueNth": 90.930,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363692,
+          "depth": 80.000,
+          "inclination": -54.390,
+          "aziTrueNth": 90.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.32",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363693,
+          "depth": 85.000,
+          "inclination": -54.310,
+          "aziTrueNth": 91.070,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.367",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363694,
+          "depth": 90.000,
+          "inclination": -54.410,
+          "aziTrueNth": 91.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363695,
+          "depth": 95.000,
+          "inclination": -54.610,
+          "aziTrueNth": 91.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.477",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363696,
+          "depth": 100.000,
+          "inclination": -54.800,
+          "aziTrueNth": 91.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.523",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363697,
+          "depth": 105.000,
+          "inclination": -54.930,
+          "aziTrueNth": 92.200,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.57",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363698,
+          "depth": 110.000,
+          "inclination": -55.080,
+          "aziTrueNth": 92.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.617",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363699,
+          "depth": 115.000,
+          "inclination": -55.050,
+          "aziTrueNth": 92.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.68",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363700,
+          "depth": 120.000,
+          "inclination": -55.050,
+          "aziTrueNth": 92.840,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.727",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363701,
+          "depth": 125.000,
+          "inclination": -55.050,
+          "aziTrueNth": 92.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.773",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363702,
+          "depth": 130.000,
+          "inclination": -55.000,
+          "aziTrueNth": 93.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.82",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363703,
+          "depth": 135.000,
+          "inclination": -55.040,
+          "aziTrueNth": 93.190,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.867",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363704,
+          "depth": 140.000,
+          "inclination": -55.090,
+          "aziTrueNth": 92.150,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.93",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363705,
+          "depth": 145.000,
+          "inclination": -55.210,
+          "aziTrueNth": 92.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:33.977",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363706,
+          "depth": 150.000,
+          "inclination": -55.300,
+          "aziTrueNth": 93.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.04",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363707,
+          "depth": 155.000,
+          "inclination": -55.430,
+          "aziTrueNth": 94.770,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.087",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363708,
+          "depth": 160.000,
+          "inclination": -55.460,
+          "aziTrueNth": 95.120,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-160m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.133",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.97,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363709,
+          "depth": 0.000,
+          "inclination": -53.900,
+          "aziTrueNth": 89.880,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.337",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363710,
+          "depth": 5.000,
+          "inclination": -53.750,
+          "aziTrueNth": 90.100,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.383",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363711,
+          "depth": 10.000,
+          "inclination": -53.490,
+          "aziTrueNth": 90.040,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363712,
+          "depth": 15.000,
+          "inclination": -53.420,
+          "aziTrueNth": 89.940,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.493",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363713,
+          "depth": 20.000,
+          "inclination": -53.600,
+          "aziTrueNth": 89.780,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.54",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363714,
+          "depth": 25.000,
+          "inclination": -53.630,
+          "aziTrueNth": 89.680,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.603",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363715,
+          "depth": 30.000,
+          "inclination": -53.690,
+          "aziTrueNth": 89.840,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.65",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363716,
+          "depth": 35.000,
+          "inclination": -53.830,
+          "aziTrueNth": 89.960,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363717,
+          "depth": 40.000,
+          "inclination": -53.880,
+          "aziTrueNth": 89.880,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363718,
+          "depth": 45.000,
+          "inclination": -53.960,
+          "aziTrueNth": 89.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363719,
+          "depth": 50.000,
+          "inclination": -54.030,
+          "aziTrueNth": 89.780,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363720,
+          "depth": 55.000,
+          "inclination": -53.990,
+          "aziTrueNth": 89.830,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.913",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363721,
+          "depth": 60.000,
+          "inclination": -53.970,
+          "aziTrueNth": 89.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:34.96",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363722,
+          "depth": 65.000,
+          "inclination": -54.060,
+          "aziTrueNth": 89.960,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.01",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363723,
+          "depth": 70.000,
+          "inclination": -54.260,
+          "aziTrueNth": 90.110,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.057",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363724,
+          "depth": 75.000,
+          "inclination": -54.360,
+          "aziTrueNth": 90.020,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.103",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363725,
+          "depth": 80.000,
+          "inclination": -54.310,
+          "aziTrueNth": 90.180,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.15",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363726,
+          "depth": 85.000,
+          "inclination": -54.220,
+          "aziTrueNth": 90.150,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.197",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363727,
+          "depth": 90.000,
+          "inclination": -54.330,
+          "aziTrueNth": 90.420,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.26",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363728,
+          "depth": 95.000,
+          "inclination": -54.550,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.307",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363729,
+          "depth": 100.000,
+          "inclination": -54.740,
+          "aziTrueNth": 91.000,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.367",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363730,
+          "depth": 105.000,
+          "inclination": -54.880,
+          "aziTrueNth": 91.200,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.43",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363731,
+          "depth": 110.000,
+          "inclination": -55.030,
+          "aziTrueNth": 91.480,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.46",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363732,
+          "depth": 115.000,
+          "inclination": -54.970,
+          "aziTrueNth": 91.490,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.523",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363733,
+          "depth": 120.000,
+          "inclination": -54.970,
+          "aziTrueNth": 91.910,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.57",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363734,
+          "depth": 125.000,
+          "inclination": -54.980,
+          "aziTrueNth": 92.140,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.617",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363735,
+          "depth": 130.000,
+          "inclination": -54.920,
+          "aziTrueNth": 92.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.663",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363736,
+          "depth": 135.000,
+          "inclination": -54.950,
+          "aziTrueNth": 92.270,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363737,
+          "depth": 140.000,
+          "inclination": -55.030,
+          "aziTrueNth": 91.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363738,
+          "depth": 145.000,
+          "inclination": -55.140,
+          "aziTrueNth": 91.340,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363739,
+          "depth": 150.000,
+          "inclination": -55.220,
+          "aziTrueNth": 92.460,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.9",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363740,
+          "depth": 155.000,
+          "inclination": -55.350,
+          "aziTrueNth": 93.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:35.96",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363741,
+          "depth": 160.000,
+          "inclination": -55.470,
+          "aziTrueNth": 94.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.023",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363742,
+          "depth": 165.000,
+          "inclination": -55.650,
+          "aziTrueNth": 95.270,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.07",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363743,
+          "depth": 170.000,
+          "inclination": -56.110,
+          "aziTrueNth": 94.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.117",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363744,
+          "depth": 175.000,
+          "inclination": -56.290,
+          "aziTrueNth": 94.940,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.163",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363745,
+          "depth": 180.000,
+          "inclination": -56.380,
+          "aziTrueNth": 95.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-ENT-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.21",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.98,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000363746,
+          "depth": 0.000,
+          "inclination": -53.800,
+          "aziTrueNth": 89.950,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.447",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363747,
+          "depth": 5.000,
+          "inclination": -53.640,
+          "aziTrueNth": 90.020,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.493",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363748,
+          "depth": 10.000,
+          "inclination": -53.420,
+          "aziTrueNth": 90.020,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.54",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363749,
+          "depth": 15.000,
+          "inclination": -53.400,
+          "aziTrueNth": 89.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.587",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363750,
+          "depth": 20.000,
+          "inclination": -53.580,
+          "aziTrueNth": 89.770,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.633",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363751,
+          "depth": 25.000,
+          "inclination": -53.580,
+          "aziTrueNth": 89.780,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.68",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363752,
+          "depth": 30.000,
+          "inclination": -53.730,
+          "aziTrueNth": 89.930,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.727",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363753,
+          "depth": 35.000,
+          "inclination": -53.850,
+          "aziTrueNth": 90.120,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.773",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363754,
+          "depth": 40.000,
+          "inclination": -53.880,
+          "aziTrueNth": 90.010,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.82",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363755,
+          "depth": 45.000,
+          "inclination": -53.960,
+          "aziTrueNth": 89.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.867",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363756,
+          "depth": 50.000,
+          "inclination": -54.020,
+          "aziTrueNth": 89.870,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.93",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363757,
+          "depth": 55.000,
+          "inclination": -54.000,
+          "aziTrueNth": 89.760,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:36.977",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363758,
+          "depth": 60.000,
+          "inclination": -53.980,
+          "aziTrueNth": 89.850,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.023",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363759,
+          "depth": 65.000,
+          "inclination": -54.080,
+          "aziTrueNth": 89.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.07",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363760,
+          "depth": 70.000,
+          "inclination": -54.280,
+          "aziTrueNth": 90.110,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.117",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363761,
+          "depth": 75.000,
+          "inclination": -54.350,
+          "aziTrueNth": 89.930,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.163",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363762,
+          "depth": 80.000,
+          "inclination": -54.280,
+          "aziTrueNth": 90.210,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.21",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363763,
+          "depth": 85.000,
+          "inclination": -54.230,
+          "aziTrueNth": 90.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.273",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363764,
+          "depth": 90.000,
+          "inclination": -54.360,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.32",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363765,
+          "depth": 95.000,
+          "inclination": -54.570,
+          "aziTrueNth": 90.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.367",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363766,
+          "depth": 100.000,
+          "inclination": -54.740,
+          "aziTrueNth": 91.050,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.413",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363767,
+          "depth": 105.000,
+          "inclination": -54.870,
+          "aziTrueNth": 91.220,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.477",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363768,
+          "depth": 110.000,
+          "inclination": -55.000,
+          "aziTrueNth": 91.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.523",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363769,
+          "depth": 115.000,
+          "inclination": -54.960,
+          "aziTrueNth": 91.440,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.57",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363770,
+          "depth": 120.000,
+          "inclination": -54.970,
+          "aziTrueNth": 91.870,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.617",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363771,
+          "depth": 125.000,
+          "inclination": -54.980,
+          "aziTrueNth": 92.190,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.663",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363772,
+          "depth": 130.000,
+          "inclination": -54.920,
+          "aziTrueNth": 92.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.71",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363773,
+          "depth": 135.000,
+          "inclination": -54.940,
+          "aziTrueNth": 92.230,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.76",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363774,
+          "depth": 140.000,
+          "inclination": -55.010,
+          "aziTrueNth": 91.390,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.807",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363775,
+          "depth": 145.000,
+          "inclination": -55.110,
+          "aziTrueNth": 91.520,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.853",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363776,
+          "depth": 150.000,
+          "inclination": -55.190,
+          "aziTrueNth": 92.610,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.9",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363777,
+          "depth": 155.000,
+          "inclination": -55.330,
+          "aziTrueNth": 93.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.947",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363778,
+          "depth": 160.000,
+          "inclination": -55.440,
+          "aziTrueNth": 94.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:37.993",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363779,
+          "depth": 165.000,
+          "inclination": -55.630,
+          "aziTrueNth": 95.260,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:38.04",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363780,
+          "depth": 170.000,
+          "inclination": -56.090,
+          "aziTrueNth": 94.520,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:38.103",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363781,
+          "depth": 175.000,
+          "inclination": -56.290,
+          "aziTrueNth": 94.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:38.15",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000363782,
+          "depth": 180.000,
+          "inclination": -56.390,
+          "aziTrueNth": 95.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP- YS-1352-180m-AVC-SAL-1.TXT",
+          "utcDateAdded": "2021-03-08T20:11:38.197",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 0.99,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000365156,
+          "depth": 0.000,
+          "inclination": -54.110,
+          "aziTrueNth": 89.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.437",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365157,
+          "depth": 5.000,
+          "inclination": -53.970,
+          "aziTrueNth": 90.240,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.483",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365158,
+          "depth": 10.000,
+          "inclination": -53.700,
+          "aziTrueNth": 90.470,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.53",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365159,
+          "depth": 15.000,
+          "inclination": -53.590,
+          "aziTrueNth": 90.440,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.58",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365160,
+          "depth": 20.000,
+          "inclination": -53.710,
+          "aziTrueNth": 90.250,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.627",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365161,
+          "depth": 25.000,
+          "inclination": -53.770,
+          "aziTrueNth": 90.290,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.673",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365162,
+          "depth": 30.000,
+          "inclination": -53.820,
+          "aziTrueNth": 90.350,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.72",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365163,
+          "depth": 35.000,
+          "inclination": -53.980,
+          "aziTrueNth": 90.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.767",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365164,
+          "depth": 40.000,
+          "inclination": -54.010,
+          "aziTrueNth": 90.440,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.83",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365165,
+          "depth": 45.000,
+          "inclination": -54.110,
+          "aziTrueNth": 90.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.877",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365166,
+          "depth": 50.000,
+          "inclination": -54.180,
+          "aziTrueNth": 90.280,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.923",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365167,
+          "depth": 55.000,
+          "inclination": -54.160,
+          "aziTrueNth": 90.280,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:08.983",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365168,
+          "depth": 60.000,
+          "inclination": -54.140,
+          "aziTrueNth": 90.370,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.047",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365169,
+          "depth": 65.000,
+          "inclination": -54.170,
+          "aziTrueNth": 90.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.093",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365170,
+          "depth": 70.000,
+          "inclination": -54.340,
+          "aziTrueNth": 90.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.157",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365171,
+          "depth": 75.000,
+          "inclination": -54.460,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.203",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365172,
+          "depth": 80.000,
+          "inclination": -54.400,
+          "aziTrueNth": 90.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.25",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365173,
+          "depth": 85.000,
+          "inclination": -54.310,
+          "aziTrueNth": 90.870,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.297",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365174,
+          "depth": 90.000,
+          "inclination": -54.420,
+          "aziTrueNth": 91.050,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.343",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365175,
+          "depth": 95.000,
+          "inclination": -54.640,
+          "aziTrueNth": 91.150,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.39",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365176,
+          "depth": 100.000,
+          "inclination": -54.860,
+          "aziTrueNth": 91.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.453",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365177,
+          "depth": 105.000,
+          "inclination": -55.010,
+          "aziTrueNth": 91.730,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.5",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365178,
+          "depth": 110.000,
+          "inclination": -55.170,
+          "aziTrueNth": 91.940,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.547",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365179,
+          "depth": 115.000,
+          "inclination": -55.150,
+          "aziTrueNth": 92.000,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.593",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365180,
+          "depth": 120.000,
+          "inclination": -55.140,
+          "aziTrueNth": 92.290,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.657",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365181,
+          "depth": 125.000,
+          "inclination": -55.170,
+          "aziTrueNth": 92.780,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.703",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365182,
+          "depth": 130.000,
+          "inclination": -55.040,
+          "aziTrueNth": 92.970,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.75",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365183,
+          "depth": 135.000,
+          "inclination": -55.070,
+          "aziTrueNth": 92.930,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.797",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365184,
+          "depth": 140.000,
+          "inclination": -55.100,
+          "aziTrueNth": 92.050,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.86",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365185,
+          "depth": 145.000,
+          "inclination": -55.230,
+          "aziTrueNth": 91.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.907",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365186,
+          "depth": 150.000,
+          "inclination": -55.290,
+          "aziTrueNth": 92.880,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:09.953",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365187,
+          "depth": 155.000,
+          "inclination": -55.390,
+          "aziTrueNth": 94.190,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365188,
+          "depth": 160.000,
+          "inclination": -55.520,
+          "aziTrueNth": 95.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.063",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365189,
+          "depth": 165.000,
+          "inclination": -55.760,
+          "aziTrueNth": 95.930,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.11",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365190,
+          "depth": 170.000,
+          "inclination": -56.250,
+          "aziTrueNth": 95.390,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.157",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365191,
+          "depth": 175.000,
+          "inclination": -56.530,
+          "aziTrueNth": 95.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.22",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365192,
+          "depth": 180.000,
+          "inclination": -56.520,
+          "aziTrueNth": 96.330,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.267",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365193,
+          "depth": 185.000,
+          "inclination": -56.540,
+          "aziTrueNth": 96.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.33",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365194,
+          "depth": 190.000,
+          "inclination": -56.880,
+          "aziTrueNth": 94.660,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.377",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365195,
+          "depth": 195.000,
+          "inclination": -57.050,
+          "aziTrueNth": 94.510,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.423",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365196,
+          "depth": 200.000,
+          "inclination": -56.930,
+          "aziTrueNth": 94.840,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.483",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365197,
+          "depth": 205.000,
+          "inclination": -56.940,
+          "aziTrueNth": 95.010,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.53",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365198,
+          "depth": 210.000,
+          "inclination": -56.960,
+          "aziTrueNth": 95.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.58",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365199,
+          "depth": 215.000,
+          "inclination": -56.980,
+          "aziTrueNth": 95.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.627",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365200,
+          "depth": 220.000,
+          "inclination": -56.920,
+          "aziTrueNth": 95.900,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.673",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365201,
+          "depth": 225.000,
+          "inclination": -56.840,
+          "aziTrueNth": 96.220,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.72",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365202,
+          "depth": 230.000,
+          "inclination": -56.910,
+          "aziTrueNth": 96.470,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.78",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365203,
+          "depth": 235.000,
+          "inclination": -56.960,
+          "aziTrueNth": 96.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.83",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365204,
+          "depth": 240.000,
+          "inclination": -56.910,
+          "aziTrueNth": 96.750,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.89",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365205,
+          "depth": 245.000,
+          "inclination": -56.880,
+          "aziTrueNth": 97.160,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.937",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365206,
+          "depth": 250.000,
+          "inclination": -56.890,
+          "aziTrueNth": 97.340,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:10.983",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365207,
+          "depth": 255.000,
+          "inclination": -56.890,
+          "aziTrueNth": 97.400,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.03",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365208,
+          "depth": 260.000,
+          "inclination": -56.880,
+          "aziTrueNth": 97.390,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.08",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365209,
+          "depth": 265.000,
+          "inclination": -56.980,
+          "aziTrueNth": 97.430,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.127",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365210,
+          "depth": 270.000,
+          "inclination": -57.050,
+          "aziTrueNth": 97.470,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.173",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365211,
+          "depth": 275.000,
+          "inclination": -57.140,
+          "aziTrueNth": 97.540,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.22",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365212,
+          "depth": 280.000,
+          "inclination": -57.200,
+          "aziTrueNth": 97.740,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.28",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365213,
+          "depth": 285.000,
+          "inclination": -57.280,
+          "aziTrueNth": 97.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.33",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        },
+        {
+          "surveyRowid": 8000365214,
+          "depth": 290.000,
+          "inclination": -57.310,
+          "aziTrueNth": 97.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-ENT-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.377",
+          "utcDateUpdated": "2021-03-15T18:13:11.58"
+        }
+      ]
+    },
+    {
+      "priority": 1.00,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000365215,
+          "depth": 0.000,
+          "inclination": -54.010,
+          "aziTrueNth": 90.490,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.657",
+          "utcDateUpdated": "2021-03-15T18:13:11.657"
+        },
+        {
+          "surveyRowid": 8000365216,
+          "depth": 5.000,
+          "inclination": -53.810,
+          "aziTrueNth": 90.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.72",
+          "utcDateUpdated": "2021-03-15T18:13:11.72"
+        },
+        {
+          "surveyRowid": 8000365217,
+          "depth": 10.000,
+          "inclination": -53.570,
+          "aziTrueNth": 90.710,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.78",
+          "utcDateUpdated": "2021-03-15T18:13:11.78"
+        },
+        {
+          "surveyRowid": 8000365218,
+          "depth": 15.000,
+          "inclination": -53.500,
+          "aziTrueNth": 90.610,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.843",
+          "utcDateUpdated": "2021-03-15T18:13:11.843"
+        },
+        {
+          "surveyRowid": 8000365219,
+          "depth": 20.000,
+          "inclination": -53.690,
+          "aziTrueNth": 90.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.907",
+          "utcDateUpdated": "2021-03-15T18:13:11.907"
+        },
+        {
+          "surveyRowid": 8000365220,
+          "depth": 25.000,
+          "inclination": -53.750,
+          "aziTrueNth": 90.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:11.953",
+          "utcDateUpdated": "2021-03-15T18:13:11.953"
+        },
+        {
+          "surveyRowid": 8000365221,
+          "depth": 30.000,
+          "inclination": -53.750,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12",
+          "utcDateUpdated": "2021-03-15T18:13:12"
+        },
+        {
+          "surveyRowid": 8000365222,
+          "depth": 35.000,
+          "inclination": -53.870,
+          "aziTrueNth": 90.690,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.047",
+          "utcDateUpdated": "2021-03-15T18:13:12.047"
+        },
+        {
+          "surveyRowid": 8000365223,
+          "depth": 40.000,
+          "inclination": -53.940,
+          "aziTrueNth": 90.770,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.093",
+          "utcDateUpdated": "2021-03-15T18:13:12.093"
+        },
+        {
+          "surveyRowid": 8000365224,
+          "depth": 45.000,
+          "inclination": -54.030,
+          "aziTrueNth": 90.530,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.14",
+          "utcDateUpdated": "2021-03-15T18:13:12.14"
+        },
+        {
+          "surveyRowid": 8000365225,
+          "depth": 50.000,
+          "inclination": -54.090,
+          "aziTrueNth": 90.410,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.203",
+          "utcDateUpdated": "2021-03-15T18:13:12.203"
+        },
+        {
+          "surveyRowid": 8000365226,
+          "depth": 55.000,
+          "inclination": -54.090,
+          "aziTrueNth": 90.420,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.25",
+          "utcDateUpdated": "2021-03-15T18:13:12.25"
+        },
+        {
+          "surveyRowid": 8000365227,
+          "depth": 60.000,
+          "inclination": -54.090,
+          "aziTrueNth": 90.420,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.313",
+          "utcDateUpdated": "2021-03-15T18:13:12.313"
+        },
+        {
+          "surveyRowid": 8000365228,
+          "depth": 65.000,
+          "inclination": -54.190,
+          "aziTrueNth": 90.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.39",
+          "utcDateUpdated": "2021-03-15T18:13:12.39"
+        },
+        {
+          "surveyRowid": 8000365229,
+          "depth": 70.000,
+          "inclination": -54.360,
+          "aziTrueNth": 90.640,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.453",
+          "utcDateUpdated": "2021-03-15T18:13:12.453"
+        },
+        {
+          "surveyRowid": 8000365230,
+          "depth": 75.000,
+          "inclination": -54.480,
+          "aziTrueNth": 90.650,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.5",
+          "utcDateUpdated": "2021-03-15T18:13:12.5"
+        },
+        {
+          "surveyRowid": 8000365231,
+          "depth": 80.000,
+          "inclination": -54.380,
+          "aziTrueNth": 90.790,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.547",
+          "utcDateUpdated": "2021-03-15T18:13:12.547"
+        },
+        {
+          "surveyRowid": 8000365232,
+          "depth": 85.000,
+          "inclination": -54.290,
+          "aziTrueNth": 90.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.61",
+          "utcDateUpdated": "2021-03-15T18:13:12.61"
+        },
+        {
+          "surveyRowid": 8000365233,
+          "depth": 90.000,
+          "inclination": -54.400,
+          "aziTrueNth": 91.160,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.673",
+          "utcDateUpdated": "2021-03-15T18:13:12.673"
+        },
+        {
+          "surveyRowid": 8000365234,
+          "depth": 95.000,
+          "inclination": -54.600,
+          "aziTrueNth": 91.290,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.72",
+          "utcDateUpdated": "2021-03-15T18:13:12.72"
+        },
+        {
+          "surveyRowid": 8000365235,
+          "depth": 100.000,
+          "inclination": -54.790,
+          "aziTrueNth": 91.760,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.78",
+          "utcDateUpdated": "2021-03-15T18:13:12.78"
+        },
+        {
+          "surveyRowid": 8000365236,
+          "depth": 105.000,
+          "inclination": -54.930,
+          "aziTrueNth": 91.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.843",
+          "utcDateUpdated": "2021-03-15T18:13:12.843"
+        },
+        {
+          "surveyRowid": 8000365237,
+          "depth": 110.000,
+          "inclination": -55.080,
+          "aziTrueNth": 91.970,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.907",
+          "utcDateUpdated": "2021-03-15T18:13:12.907"
+        },
+        {
+          "surveyRowid": 8000365238,
+          "depth": 115.000,
+          "inclination": -55.080,
+          "aziTrueNth": 92.080,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:12.97",
+          "utcDateUpdated": "2021-03-15T18:13:12.97"
+        },
+        {
+          "surveyRowid": 8000365239,
+          "depth": 120.000,
+          "inclination": -55.100,
+          "aziTrueNth": 92.380,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.047",
+          "utcDateUpdated": "2021-03-15T18:13:13.047"
+        },
+        {
+          "surveyRowid": 8000365240,
+          "depth": 125.000,
+          "inclination": -55.140,
+          "aziTrueNth": 92.820,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.093",
+          "utcDateUpdated": "2021-03-15T18:13:13.093"
+        },
+        {
+          "surveyRowid": 8000365241,
+          "depth": 130.000,
+          "inclination": -55.080,
+          "aziTrueNth": 93.070,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.173",
+          "utcDateUpdated": "2021-03-15T18:13:13.173"
+        },
+        {
+          "surveyRowid": 8000365242,
+          "depth": 135.000,
+          "inclination": -55.120,
+          "aziTrueNth": 92.980,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.233",
+          "utcDateUpdated": "2021-03-15T18:13:13.233"
+        },
+        {
+          "surveyRowid": 8000365243,
+          "depth": 140.000,
+          "inclination": -55.150,
+          "aziTrueNth": 92.080,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.313",
+          "utcDateUpdated": "2021-03-15T18:13:13.313"
+        },
+        {
+          "surveyRowid": 8000365244,
+          "depth": 145.000,
+          "inclination": -55.250,
+          "aziTrueNth": 92.000,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.36",
+          "utcDateUpdated": "2021-03-15T18:13:13.36"
+        },
+        {
+          "surveyRowid": 8000365245,
+          "depth": 150.000,
+          "inclination": -55.280,
+          "aziTrueNth": 92.960,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.423",
+          "utcDateUpdated": "2021-03-15T18:13:13.423"
+        },
+        {
+          "surveyRowid": 8000365246,
+          "depth": 155.000,
+          "inclination": -55.400,
+          "aziTrueNth": 94.310,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.47",
+          "utcDateUpdated": "2021-03-15T18:13:13.47"
+        },
+        {
+          "surveyRowid": 8000365247,
+          "depth": 160.000,
+          "inclination": -55.530,
+          "aziTrueNth": 95.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.517",
+          "utcDateUpdated": "2021-03-15T18:13:13.517"
+        },
+        {
+          "surveyRowid": 8000365248,
+          "depth": 165.000,
+          "inclination": -55.730,
+          "aziTrueNth": 96.070,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.58",
+          "utcDateUpdated": "2021-03-15T18:13:13.58"
+        },
+        {
+          "surveyRowid": 8000365249,
+          "depth": 170.000,
+          "inclination": -56.210,
+          "aziTrueNth": 95.520,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.64",
+          "utcDateUpdated": "2021-03-15T18:13:13.64"
+        },
+        {
+          "surveyRowid": 8000365250,
+          "depth": 175.000,
+          "inclination": -56.470,
+          "aziTrueNth": 95.610,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.687",
+          "utcDateUpdated": "2021-03-15T18:13:13.687"
+        },
+        {
+          "surveyRowid": 8000365251,
+          "depth": 180.000,
+          "inclination": -56.460,
+          "aziTrueNth": 96.590,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.75",
+          "utcDateUpdated": "2021-03-15T18:13:13.75"
+        },
+        {
+          "surveyRowid": 8000365252,
+          "depth": 185.000,
+          "inclination": -56.450,
+          "aziTrueNth": 96.620,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.813",
+          "utcDateUpdated": "2021-03-15T18:13:13.813"
+        },
+        {
+          "surveyRowid": 8000365253,
+          "depth": 190.000,
+          "inclination": -56.800,
+          "aziTrueNth": 94.860,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.877",
+          "utcDateUpdated": "2021-03-15T18:13:13.877"
+        },
+        {
+          "surveyRowid": 8000365254,
+          "depth": 195.000,
+          "inclination": -56.950,
+          "aziTrueNth": 94.670,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.923",
+          "utcDateUpdated": "2021-03-15T18:13:13.923"
+        },
+        {
+          "surveyRowid": 8000365255,
+          "depth": 200.000,
+          "inclination": -56.880,
+          "aziTrueNth": 94.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:13.97",
+          "utcDateUpdated": "2021-03-15T18:13:13.97"
+        },
+        {
+          "surveyRowid": 8000365256,
+          "depth": 205.000,
+          "inclination": -56.890,
+          "aziTrueNth": 95.150,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.017",
+          "utcDateUpdated": "2021-03-15T18:13:14.017"
+        },
+        {
+          "surveyRowid": 8000365257,
+          "depth": 210.000,
+          "inclination": -56.910,
+          "aziTrueNth": 95.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.08",
+          "utcDateUpdated": "2021-03-15T18:13:14.08"
+        },
+        {
+          "surveyRowid": 8000365258,
+          "depth": 215.000,
+          "inclination": -56.950,
+          "aziTrueNth": 95.630,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.14",
+          "utcDateUpdated": "2021-03-15T18:13:14.14"
+        },
+        {
+          "surveyRowid": 8000365259,
+          "depth": 220.000,
+          "inclination": -56.920,
+          "aziTrueNth": 95.950,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.203",
+          "utcDateUpdated": "2021-03-15T18:13:14.203"
+        },
+        {
+          "surveyRowid": 8000365260,
+          "depth": 225.000,
+          "inclination": -56.830,
+          "aziTrueNth": 96.260,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.28",
+          "utcDateUpdated": "2021-03-15T18:13:14.28"
+        },
+        {
+          "surveyRowid": 8000365261,
+          "depth": 230.000,
+          "inclination": -56.880,
+          "aziTrueNth": 96.580,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.343",
+          "utcDateUpdated": "2021-03-15T18:13:14.343"
+        },
+        {
+          "surveyRowid": 8000365262,
+          "depth": 235.000,
+          "inclination": -56.910,
+          "aziTrueNth": 96.750,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.407",
+          "utcDateUpdated": "2021-03-15T18:13:14.407"
+        },
+        {
+          "surveyRowid": 8000365263,
+          "depth": 240.000,
+          "inclination": -56.860,
+          "aziTrueNth": 96.850,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.453",
+          "utcDateUpdated": "2021-03-15T18:13:14.453"
+        },
+        {
+          "surveyRowid": 8000365264,
+          "depth": 245.000,
+          "inclination": -56.820,
+          "aziTrueNth": 97.240,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.5",
+          "utcDateUpdated": "2021-03-15T18:13:14.5"
+        },
+        {
+          "surveyRowid": 8000365265,
+          "depth": 250.000,
+          "inclination": -56.840,
+          "aziTrueNth": 97.530,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.563",
+          "utcDateUpdated": "2021-03-15T18:13:14.563"
+        },
+        {
+          "surveyRowid": 8000365266,
+          "depth": 255.000,
+          "inclination": -56.820,
+          "aziTrueNth": 97.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.61",
+          "utcDateUpdated": "2021-03-15T18:13:14.61"
+        },
+        {
+          "surveyRowid": 8000365267,
+          "depth": 260.000,
+          "inclination": -56.800,
+          "aziTrueNth": 97.530,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.673",
+          "utcDateUpdated": "2021-03-15T18:13:14.673"
+        },
+        {
+          "surveyRowid": 8000365268,
+          "depth": 265.000,
+          "inclination": -56.930,
+          "aziTrueNth": 97.450,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.72",
+          "utcDateUpdated": "2021-03-15T18:13:14.72"
+        },
+        {
+          "surveyRowid": 8000365269,
+          "depth": 270.000,
+          "inclination": -57.030,
+          "aziTrueNth": 97.500,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.78",
+          "utcDateUpdated": "2021-03-15T18:13:14.78"
+        },
+        {
+          "surveyRowid": 8000365270,
+          "depth": 275.000,
+          "inclination": -57.120,
+          "aziTrueNth": 97.560,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.86",
+          "utcDateUpdated": "2021-03-15T18:13:14.86"
+        },
+        {
+          "surveyRowid": 8000365271,
+          "depth": 280.000,
+          "inclination": -57.160,
+          "aziTrueNth": 97.800,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.923",
+          "utcDateUpdated": "2021-03-15T18:13:14.923"
+        },
+        {
+          "surveyRowid": 8000365272,
+          "depth": 285.000,
+          "inclination": -57.220,
+          "aziTrueNth": 97.920,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:14.983",
+          "utcDateUpdated": "2021-03-15T18:13:14.983"
+        },
+        {
+          "surveyRowid": 8000365273,
+          "depth": 290.000,
+          "inclination": -57.290,
+          "aziTrueNth": 97.990,
+          "description": "C:\\GEODATA\\SURVEY\\2021\\SPTP-YS-1352-290m-FIN-SAL-1.TXT",
+          "utcDateAdded": "2021-03-15T18:13:15.03",
+          "utcDateUpdated": "2021-03-15T18:13:15.03"
+        }
+      ]
+    }
+  ]
+}

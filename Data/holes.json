@@ -1,0 +1,74 @@
+{
+    "holes": [
+        {         
+            "holeRowid": 8000024061,
+            "holeId": "NPC01",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "NPC01.json"
+        },
+        {
+            "holeRowid": 8000023905,
+            "holeId": "NPC03",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "NPC03.json"
+        },
+        {
+            "holeRowid": 8000023900,
+            "holeId": "NPC71",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "NPC71.json"
+        },
+        {
+            "holeRowid": 8000023902,
+            "holeId": "NPC71A",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "NPC71A.json"
+        },
+        {
+            "holeRowid": 8000023895,
+            "holeId": "NPC869",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "NPC869.json"
+        },
+        {
+            "holeRowid": 8000024077,
+            "holeId": "SOM-001",
+            "project": "SOM",
+            "office": "Auckland",
+            "filename": "SOM-001.json"
+        },
+        {
+            "holeRowid": 8000024072,
+            "holeId": "SOM-002",
+            "project": "SOM",
+            "office": "Auckland",
+            "filename": "SOM-002.json"
+        },
+        {
+            "holeRowid": 8000024070,
+            "holeId": "SOM-003",
+            "project": "SOM",
+            "office": "Auckland",
+            "filename": "SOM-003.json"
+        },
+        {
+            "holeRowid": 8000024069,
+            "holeId": "SOM-004",
+            "project": "SOM",
+            "office": "Auckland",
+            "filename": "SOM-004.json"
+        },
+        {
+            "holeRowid": 8000024065,
+            "holeId": "SOM-005",
+            "project": "SOM",
+            "office": "Auckland",
+            "filename": "SOM-005.json"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "holeRowid": 8000024077,
+  "holeId": "SOM-001",
+  "project": "SOM",
+  "office": "Auckland",
+  "depth": 170.000,
+  "depthUnits": "METERS",
+  "source": "GOLDEN",
+  "startDate": "2022-07-25T00:00:00",
+  "endDate": "2022-07-30T00:00:00",
+  "description": "PLATFORM:KAT-2022-006 / LINE:UNKNOWN / AZIMUT:285.000 / INCL:-46.000 / DEPTH:170.000 / USUARIO:NMC\\01100410",
+  "x": 40887.5028019200,
+  "y": 54229.3405632000,
+  "z": 8768.8933689600,
+  "lat": 38.7269984195,
+  "long": -105.1426513163,
+  "elevation": 2672.8610000000,
+  "status": "IN_PROGRESS",
+  "surveyGroups": [
+    {
+      "priority": 1.00,
+      "surveyType": "PLANNED",
+      "surveys": [
+        {
+          "surveyRowid": 8000415082,
+          "depth": 0.000,
+          "inclination": -46.000,
+          "aziTrueNth": 285.000,
+          "description": "SURVEY PLANEADO DATOS REGISTRADOS EN CREACION TALADRO POR USUARIO:NMC\\01100410",
+          "utcDateAdded": "2022-07-25T10:20:30.077",
+          "utcDateUpdated": "2022-07-25T10:20:30.077"
+        }
+      ]
+    }
+  ]
+}

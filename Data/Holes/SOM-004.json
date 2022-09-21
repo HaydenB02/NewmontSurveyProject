@@ -1,0 +1,591 @@
+{
+  "holeRowid": 8000024069,
+  "holeId": "SOM-004",
+  "project": "SOM",
+  "office": "Auckland",
+  "depth": 140.000,
+  "depthUnits": "METERS",
+  "source": "GOLDEN",
+  "startDate": "2022-07-05T00:00:00",
+  "endDate": "2022-07-08T00:00:00",
+  "description": "PLATFORM:KAT-2022-004 / LINE:HQ / AZIMUT:340.000 / INCL:-65.000 / DEPTH:140.000 / USUARIO:NMC\\01100410",
+  "x": 41192.49909312,
+  "y": 54439.3380096,
+  "z": 8530.89626304,
+  "lat": 38.7275715394,
+  "long": -105.1415799693,
+  "elevation": 2600.321,
+  "status": "COMPLETE",
+  "surveyGroups": [
+    {
+      "priority": 0.96,
+      "surveyType": "PLANNED",
+      "surveys": [
+        {
+          "surveyRowid": 8000412315,
+          "depth": 0.000,
+          "inclination": -65.000,
+          "aziTrueNth": 340.000,
+          "description": "SURVEY PLANEADO DATOS REGISTRADOS EN CREACION TALADRO POR USUARIO:NMC\\01100410",
+          "utcDateAdded": "2022-07-04T18:15:56.92",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        }
+      ]
+    },
+    {
+      "priority": 0.97,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000413938,
+          "depth": 0.000,
+          "inclination": -65.180,
+          "aziTrueNth": 340.020,
+          "description": "SPTP- YS-1356-10m-AVC-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:30.857",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        },
+        {
+          "surveyRowid": 8000413939,
+          "depth": 5.000,
+          "inclination": -65.130,
+          "aziTrueNth": 340.120,
+          "description": "SPTP- YS-1356-10m-AVC-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:30.967",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        },
+        {
+          "surveyRowid": 8000413940,
+          "depth": 10.000,
+          "inclination": -65.110,
+          "aziTrueNth": 340.660,
+          "description": "SPTP- YS-1356-10m-AVC-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.07",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        }
+      ]
+    },
+    {
+      "priority": 0.98,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000413941,
+          "depth": 0.000,
+          "inclination": -65.100,
+          "aziTrueNth": 340.210,
+          "description": "SPTP- YS-1356-10m-AVC-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.217",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        },
+        {
+          "surveyRowid": 8000413942,
+          "depth": 5.000,
+          "inclination": -65.120,
+          "aziTrueNth": 340.260,
+          "description": "SPTP- YS-1356-10m-AVC-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.35",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        },
+        {
+          "surveyRowid": 8000413943,
+          "depth": 10.000,
+          "inclination": -65.000,
+          "aziTrueNth": 340.630,
+          "description": "SPTP- YS-1356-10m-AVC-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.447",
+          "utcDateUpdated": "2022-07-19T16:58:34.363"
+        }
+      ]
+    },
+    {
+      "priority": 0.99,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000413970,
+          "depth": 0.000,
+          "inclination": -65.060,
+          "aziTrueNth": 340.130,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.373",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413971,
+          "depth": 5.000,
+          "inclination": -64.530,
+          "aziTrueNth": 339.900,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.5",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413972,
+          "depth": 10.000,
+          "inclination": -65.170,
+          "aziTrueNth": 340.160,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.64",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413973,
+          "depth": 15.000,
+          "inclination": -65.040,
+          "aziTrueNth": 340.410,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.757",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413974,
+          "depth": 20.000,
+          "inclination": -64.940,
+          "aziTrueNth": 340.540,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.89",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413975,
+          "depth": 25.000,
+          "inclination": -65.140,
+          "aziTrueNth": 340.570,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.01",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413976,
+          "depth": 30.000,
+          "inclination": -65.160,
+          "aziTrueNth": 340.630,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.097",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413977,
+          "depth": 35.000,
+          "inclination": -65.200,
+          "aziTrueNth": 340.850,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.2",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413978,
+          "depth": 40.000,
+          "inclination": -65.160,
+          "aziTrueNth": 340.710,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.367",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413979,
+          "depth": 45.000,
+          "inclination": -65.130,
+          "aziTrueNth": 341.030,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.48",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413980,
+          "depth": 50.000,
+          "inclination": -65.090,
+          "aziTrueNth": 341.170,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.59",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413981,
+          "depth": 55.000,
+          "inclination": -65.070,
+          "aziTrueNth": 341.040,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.69",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413982,
+          "depth": 60.000,
+          "inclination": -65.040,
+          "aziTrueNth": 340.830,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.837",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413983,
+          "depth": 65.000,
+          "inclination": -65.070,
+          "aziTrueNth": 340.850,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:35.927",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413984,
+          "depth": 70.000,
+          "inclination": -65.040,
+          "aziTrueNth": 340.900,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.033",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413985,
+          "depth": 75.000,
+          "inclination": -65.020,
+          "aziTrueNth": 340.900,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.127",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413986,
+          "depth": 80.000,
+          "inclination": -65.050,
+          "aziTrueNth": 341.060,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.22",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413987,
+          "depth": 85.000,
+          "inclination": -65.120,
+          "aziTrueNth": 341.120,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.313",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413988,
+          "depth": 90.000,
+          "inclination": -65.070,
+          "aziTrueNth": 341.380,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.423",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413989,
+          "depth": 95.000,
+          "inclination": -65.130,
+          "aziTrueNth": 341.370,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.517",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413990,
+          "depth": 100.000,
+          "inclination": -65.110,
+          "aziTrueNth": 341.360,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.617",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413991,
+          "depth": 105.000,
+          "inclination": -65.130,
+          "aziTrueNth": 341.520,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.7",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413992,
+          "depth": 110.000,
+          "inclination": -65.100,
+          "aziTrueNth": 341.480,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.79",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413993,
+          "depth": 115.000,
+          "inclination": -65.110,
+          "aziTrueNth": 341.650,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.897",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413994,
+          "depth": 120.000,
+          "inclination": -65.130,
+          "aziTrueNth": 341.920,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:36.983",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413995,
+          "depth": 125.000,
+          "inclination": -65.180,
+          "aziTrueNth": 342.050,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:37.067",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413996,
+          "depth": 125.280,
+          "inclination": -65.180,
+          "aziTrueNth": 342.060,
+          "description": "SPTP- YS-1356-125.28m-FIN-ENT-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:37.15",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        }
+      ]
+    },
+    {
+      "priority": 1.00,
+      "surveyType": "GYROSCOPE_NS",
+      "surveys": [
+        {
+          "surveyRowid": 8000413944,
+          "depth": 0.000,
+          "inclination": -64.840,
+          "aziTrueNth": 340.330,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.573",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413945,
+          "depth": 5.000,
+          "inclination": -64.820,
+          "aziTrueNth": 340.070,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.683",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413946,
+          "depth": 10.000,
+          "inclination": -65.130,
+          "aziTrueNth": 340.380,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.777",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413947,
+          "depth": 15.000,
+          "inclination": -64.680,
+          "aziTrueNth": 340.610,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.87",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413948,
+          "depth": 20.000,
+          "inclination": -64.970,
+          "aziTrueNth": 340.720,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:31.98",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413949,
+          "depth": 25.000,
+          "inclination": -65.040,
+          "aziTrueNth": 340.810,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.083",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413950,
+          "depth": 30.000,
+          "inclination": -65.010,
+          "aziTrueNth": 340.820,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.183",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413951,
+          "depth": 35.000,
+          "inclination": -65.110,
+          "aziTrueNth": 341.010,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.287",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413952,
+          "depth": 40.000,
+          "inclination": -65.010,
+          "aziTrueNth": 340.940,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.373",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413953,
+          "depth": 45.000,
+          "inclination": -64.970,
+          "aziTrueNth": 341.270,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.467",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413954,
+          "depth": 50.000,
+          "inclination": -65.070,
+          "aziTrueNth": 341.400,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.597",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413955,
+          "depth": 55.000,
+          "inclination": -65.010,
+          "aziTrueNth": 341.270,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.723",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413956,
+          "depth": 60.000,
+          "inclination": -64.940,
+          "aziTrueNth": 341.020,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.83",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413957,
+          "depth": 65.000,
+          "inclination": -64.970,
+          "aziTrueNth": 341.060,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:32.94",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413958,
+          "depth": 70.000,
+          "inclination": -64.980,
+          "aziTrueNth": 341.020,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.033",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413959,
+          "depth": 75.000,
+          "inclination": -65.050,
+          "aziTrueNth": 341.010,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.143",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413960,
+          "depth": 80.000,
+          "inclination": -65.100,
+          "aziTrueNth": 341.170,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.243",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413961,
+          "depth": 85.000,
+          "inclination": -65.080,
+          "aziTrueNth": 341.150,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.35",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413962,
+          "depth": 90.000,
+          "inclination": -65.050,
+          "aziTrueNth": 341.350,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.477",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413963,
+          "depth": 95.000,
+          "inclination": -65.080,
+          "aziTrueNth": 341.340,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.59",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413964,
+          "depth": 100.000,
+          "inclination": -65.030,
+          "aziTrueNth": 341.350,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.71",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413965,
+          "depth": 105.000,
+          "inclination": -65.150,
+          "aziTrueNth": 341.620,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.827",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413966,
+          "depth": 110.000,
+          "inclination": -65.130,
+          "aziTrueNth": 341.580,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:33.91",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413967,
+          "depth": 115.000,
+          "inclination": -65.100,
+          "aziTrueNth": 341.750,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.007",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413968,
+          "depth": 120.000,
+          "inclination": -65.170,
+          "aziTrueNth": 341.850,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.097",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        },
+        {
+          "surveyRowid": 8000413969,
+          "depth": 125.000,
+          "inclination": -65.220,
+          "aziTrueNth": 341.990,
+          "description": "SPTP- YS-1356-125m-FIN-SAL-1.xlsm",
+          "utcDateAdded": "2022-07-19T16:58:34.207",
+          "utcDateUpdated": "2022-07-19T19:17:03.273"
+        }
+      ]
+    }
+  ]
+}
