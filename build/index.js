@@ -14,7 +14,7 @@ Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 Vue.use(Notifications);
 const v = new Vue({
-    el: "#MinesExample",
+    el: "#HyperSurvey",
     router: router,
     store,
     render: h => h(App)

@@ -1,9 +1,7 @@
-import { Location } from 'vue-router';
 import Vue from "vue";
 import { RootState } from "../../store";
 import { getStoreBuilder } from "vuex-typex";
 import App, { AppState } from "./app";
-import router from '../../router';
 import Fuse from 'fuse.js';
 
 export interface HoleName {
@@ -53,6 +51,7 @@ export interface Survey {
 
 export interface DataState {
    holeNames: Array<HoleName>,
+   hole: Hole,
    surveyGroups: Array<SurveyGroup>,
    search_results: Array<HoleName>,
    holes: Array<Hole>
@@ -60,6 +59,7 @@ export interface DataState {
 
 const initialState: DataState = {
   holeNames: [],
+  hole: null,
   surveyGroups: [],
   search_results: [],
   holes: []
@@ -77,14 +77,13 @@ async function fetchHoleNames(): Promise<Array<HoleName>> {
 }
 
 async function getHole(state: DataState, payload: {filename: string}) {
-  state.holes = await fetchHole(payload.filename);
+  state.hole = await fetchHole(payload.filename);
   await App.commitSetIsLoading({isLoading: false});
 }
 
-async function fetchHole(filename: string): Promise<Array<any>> {
+async function fetchHole(filename: string): Promise<Hole> {
   const call = await fetch("../../../Data/Holes/" + filename);
   const response = await call.json();
-  console.log(response);
   return response;
 }
 

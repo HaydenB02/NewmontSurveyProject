@@ -1,14 +1,17 @@
 <template>
   <div id="controls">
-    <b-card id="data-card" class="text-center">
-      <b-form-select id="hole-dropdown" v-model="selectedHole">
-        <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
-      </b-form-select>
-      <b-form-select id="priority-dropdown" v-model="selectedSurvey">
-        <b-form-select-option v-for="survey in surveyGroup" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
-      </b-form-select>
-    </b-card> 
-    </div>
+    <b-form inline>
+      <b-card id="data-card" class="text-center">
+        <b-form-select id="hole-dropdown" v-model="selectedHole">
+          <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
+        </b-form-select>
+        <b-form-select id="priority-dropdown" v-model="selectedSurvey">
+          <b-form-select-option v-for="survey in surveyGroup" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
+        </b-form-select>
+        <b-form-input id="difference-input" v-model="allowedPercent" type="number" min="0" max="100" placeholder="% Difference"></b-form-input>
+      </b-card> 
+    </b-form>
+  </div>
 </template>
 
 <script lang="ts">
@@ -34,10 +37,12 @@ library.add(faPlus, faCog);
 })
 export default class Controls extends Vue {
   selectedHole = "";
+  selectedSurvey = "";
   @Watch('selectedHole', {immediate: true})
   onChildChanged(val: string, oldVal: string) {
     //Load the json in selected
     Data.commitGetHole({filename: val});
+    
   }
 
   get holeNames(): Array<HoleName> {
@@ -93,12 +98,14 @@ export default class Controls extends Vue {
 
   #hole-dropdown {
     margin-top: 2em;
-    width: 25%
   }
 
   #priority-dropdown {
     margin-top: 2em;
-    width: 10%
+  }
+
+  #difference-input {
+    margin-top: 2em;
   }
 
 </style>
