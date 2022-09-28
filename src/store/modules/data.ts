@@ -53,6 +53,7 @@ export interface DataState {
    holeNames: Array<HoleName>,
    hole: Hole,
    surveyGroups: Array<SurveyGroup>,
+   survey: Survey,
    search_results: Array<HoleName>,
    holes: Array<Hole>
 }
@@ -61,6 +62,7 @@ const initialState: DataState = {
   holeNames: [],
   hole: null,
   surveyGroups: [],
+  survey: null,
   search_results: [],
   holes: []
 };
@@ -78,6 +80,7 @@ async function fetchHoleNames(): Promise<Array<HoleName>> {
 
 async function getHole(state: DataState, payload: {filename: string}) {
   state.hole = await fetchHole(payload.filename);
+  updateSurveyGroups(state);
   await App.commitSetIsLoading({isLoading: false});
 }
 
@@ -85,6 +88,10 @@ async function fetchHole(filename: string): Promise<Hole> {
   const call = await fetch("../../../Data/Holes/" + filename);
   const response = await call.json();
   return response;
+}
+
+async function updateSurveyGroups(state: DataState) {
+  state.surveyGroups = state.hole.surveyGroups.reverse();
 }
 
 const searchOptions: Fuse.FuseOptions<HoleName> = {

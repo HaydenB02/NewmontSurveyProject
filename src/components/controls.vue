@@ -1,16 +1,38 @@
 <template>
   <div id="controls">
-    <b-form inline>
       <b-card id="data-card" class="text-center">
-        <b-form-select id="hole-dropdown" v-model="selectedHole">
-          <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
-        </b-form-select>
-        <b-form-select id="priority-dropdown" v-model="selectedSurvey">
-          <b-form-select-option v-for="survey in surveyGroup" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
-        </b-form-select>
-        <b-form-input id="difference-input" v-model="allowedPercent" type="number" min="0" max="100" placeholder="% Difference"></b-form-input>
-      </b-card> 
-    </b-form>
+
+        
+        <b-form inline>
+          <b-form-select id="hole-dropdown" v-model="selectedHole">
+            <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
+          </b-form-select>
+          <b-form-select id="priority-dropdown" v-model="selectedSurvey" :aria-placeholder=selectedSurvey>
+            <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
+          </b-form-select>
+          <b-form-input id="difference-input" v-model="allowedPercent" type="number" min="0" max="100" placeholder="% Difference"></b-form-input>
+        </b-form>
+
+        <div v-for="survey in surveyGroups" :key="survey.priority" :value="survey">
+          <b-card id="survey-card">
+
+            <b-form inline>
+              <h4 id="priority-title">Priority: {{survey.priority}}</h4>
+              <b-checkbox></b-checkbox>
+            </b-form>
+
+            <b-form inline>
+              <h6 id="type-title">Survey Type: {{survey.surveyType}}</h6>
+              <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
+              <b-collapse id="table-collapse">hi</b-collapse>
+            </b-form>
+
+          </b-card>
+        </div>
+
+
+
+      </b-card>
   </div>
 </template>
 
@@ -37,12 +59,11 @@ library.add(faPlus, faCog);
 })
 export default class Controls extends Vue {
   selectedHole = "";
-  selectedSurvey = "";
+  selectedSurvey = 1;
   @Watch('selectedHole', {immediate: true})
   onChildChanged(val: string, oldVal: string) {
     //Load the json in selected
     Data.commitGetHole({filename: val});
-    
   }
 
   get holeNames(): Array<HoleName> {
@@ -90,22 +111,35 @@ export default class Controls extends Vue {
 <style scoped>
 
   #controls {
-    padding: 1em;
     width: 50%;
     height: 100%;
     background-color: red;
   }
 
+  #data-card {
+    width: 100%
+  }
+
   #hole-dropdown {
-    margin-top: 2em;
+    width: 40%
   }
 
   #priority-dropdown {
-    margin-top: 2em;
+    width: 20%
   }
 
   #difference-input {
-    margin-top: 2em;
+    width: 20%
+  }
+
+  #priority-title {
+    margin-left: 0;
+    width: 60%
+  }
+
+  #type-title {
+    margin-left: 0;
+    width: 60%
   }
 
 </style>
