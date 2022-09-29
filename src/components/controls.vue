@@ -1,28 +1,9 @@
 <template>
   <div id="controls">
       <b-card id="data-card" class="text-center">
-
         
         <toolbar />
-
-        <div v-for="survey in surveyGroups" :key="survey.priority" :value="survey">
-          <b-card id="survey-card">
-
-            <b-form inline>
-              <h4 id="priority-title">Priority: {{survey.priority}}</h4>
-              <b-checkbox></b-checkbox>
-            </b-form>
-
-            <b-form inline>
-              <h6 id="type-title">Survey Type: {{survey.surveyType}}</h6>
-              <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
-              <b-collapse id="table-collapse">hi</b-collapse>
-            </b-form>
-
-          </b-card>
-        </div>
-
-
+        <surveys />
 
       </b-card>
   </div>
@@ -38,6 +19,7 @@ import Data, { HoleName, SurveyGroup } from "../store/modules/data";
 
 //UI Components
 import Toolbar from "./toolbar.vue";
+import Surveys from "./surveys.vue";
 
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -48,6 +30,7 @@ library.add(faPlus, faCog);
 @Component({
   components: {
     Toolbar,
+    Surveys,
     Icon
   }
 })
@@ -103,25 +86,9 @@ export default class Controls extends Vue {
 
 <!-- Local Style -->
 <style scoped>
-
   #controls {
     width: 50%;
     height: 100%;
     background-color: white;
   }
-
-  #data-card {
-    width: 100%
-  }
-
-  #priority-title {
-    margin-left: 0;
-    width: 60%
-  }
-
-  #type-title {
-    margin-left: 0;
-    width: 60%
-  }
-
 </style>

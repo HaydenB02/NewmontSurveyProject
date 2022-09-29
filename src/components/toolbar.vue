@@ -70,19 +70,19 @@ export default class Toolbar extends Vue {
   #toolbar {
     width: 100%;
     height: 10%;
-    margin: 2em
+    margin-bottom: 1em;
   }
 
   #hole-dropdown {
-    width: 40%
+    width: 40%;
   }
 
   #priority-dropdown {
-    width: 20%
+    width: 20%;
   }
 
   #difference-input {
-    width: 20%
+    width: 20%;
   }
 
 </style>
