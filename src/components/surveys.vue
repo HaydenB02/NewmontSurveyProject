@@ -1,7 +1,7 @@
 <template>
     <div id="surveys">
       <div v-if="surveyGroups.length > 0">
-        <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :value="surveyGroup" :item_id="surveyGroup" />
+        <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :card_id="surveyGroup.priority" />
       </div>
     </div>
 </template>
