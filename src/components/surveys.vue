@@ -1,23 +1,8 @@
 <template>
     <div id="surveys">
-
-        <div v-for="survey in surveyGroups" :key="survey.priority" :value="survey">
-          <b-card id="survey-card">
-
-            <b-form inline>
-              <h4 id="priority-title">Priority: {{survey.priority}}</h4>
-              <b-checkbox></b-checkbox>
-            </b-form>
-
-            <b-form inline>
-              <h6 id="type-title">Survey Type: {{survey.surveyType}}</h6>
-              <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
-              <b-collapse id="table-collapse">hi</b-collapse>
-            </b-form>
-
-          </b-card>
-        </div>
-
+      <div v-if="surveyGroups.length > 0">
+        <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :value="surveyGroup" :item_id="surveyGroup" />
+      </div>
     </div>
 </template>
 
@@ -30,6 +15,7 @@ import App, { AppState } from "../store/modules/app";
 import Data, { SurveyGroup } from "../store/modules/data";
     
 //UI Components
+import SurveyCard from "./surveys/survey_card.vue";
     
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -39,6 +25,7 @@ library.add(faPlus, faCog);
     
 @Component({
   components: {
+    SurveyCard,
     Icon
   }
 })
@@ -56,8 +43,7 @@ export default class Surveys extends Vue {
 <!-- Local Style -->
 <style scoped>
   #surveys {
-    overflow: auto;
-    position: relative;
+    overflow-y: auto;
   }
 
   #priority-title {
@@ -70,3 +56,23 @@ export default class Surveys extends Vue {
     width: 60%
   }
 </style>
+
+
+
+
+<!-- <div v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :value="surveyGroup">
+  <b-card id="survey-card">
+
+    <b-form inline>
+      <h4 id="priority-title">Priority: {{surveyGroup.priority}}</h4>
+      <b-checkbox></b-checkbox>
+    </b-form>
+
+    <b-form inline>
+      <h6 id="type-title">Survey Type: {{surveyGroup.surveyType}}</h6>
+      <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
+      <b-collapse id="table-collapse">hi</b-collapse>
+    </b-form>
+
+  </b-card>
+</div> -->

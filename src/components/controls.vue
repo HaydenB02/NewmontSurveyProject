@@ -90,5 +90,6 @@ export default class Controls extends Vue {
     width: 50%;
     height: 100%;
     background-color: white;
+    overflow-y: auto;
   }
 </style>

@@ -53,7 +53,7 @@ export interface DataState {
    holeNames: Array<HoleName>,
    hole: Hole,
    surveyGroups: Array<SurveyGroup>,
-   surveys: SurveyGroup,
+   surveyGroup: SurveyGroup,
    search_results: Array<HoleName>,
    holes: Array<Hole>
 }
@@ -62,7 +62,7 @@ const initialState: DataState = {
   holeNames: [],
   hole: null,
   surveyGroups: [],
-  surveys: null,
+  surveyGroup: null,
   search_results: [],
   holes: []
 };
