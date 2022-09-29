@@ -3,15 +3,7 @@
       <b-card id="data-card" class="text-center">
 
         
-        <b-form inline>
-          <b-form-select id="hole-dropdown" v-model="selectedHole">
-            <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
-          </b-form-select>
-          <b-form-select id="priority-dropdown" v-model="selectedSurvey" :aria-placeholder=selectedSurvey>
-            <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
-          </b-form-select>
-          <b-form-input id="difference-input" v-model="allowedPercent" type="number" min="0" max="100" placeholder="% Difference"></b-form-input>
-        </b-form>
+        <toolbar />
 
         <div v-for="survey in surveyGroups" :key="survey.priority" :value="survey">
           <b-card id="survey-card">
@@ -45,6 +37,7 @@ import App, { AppState } from "../store/modules/app";
 import Data, { HoleName, SurveyGroup } from "../store/modules/data";
 
 //UI Components
+import Toolbar from "./toolbar.vue";
 
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -54,6 +47,7 @@ library.add(faPlus, faCog);
 
 @Component({
   components: {
+    Toolbar,
     Icon
   }
 })
@@ -113,23 +107,11 @@ export default class Controls extends Vue {
   #controls {
     width: 50%;
     height: 100%;
-    background-color: red;
+    background-color: white;
   }
 
   #data-card {
     width: 100%
-  }
-
-  #hole-dropdown {
-    width: 40%
-  }
-
-  #priority-dropdown {
-    width: 20%
-  }
-
-  #difference-input {
-    width: 20%
   }
 
   #priority-title {
