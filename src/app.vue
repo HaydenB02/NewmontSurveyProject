@@ -40,6 +40,7 @@ export default class App extends Vue {
   max-width: 100% !important;
   height: 100vh !important;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 :root {
