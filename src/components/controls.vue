@@ -1,7 +1,7 @@
 <template>
   <div id="controls">
       <b-card id="data-card" class="text-center">
-        
+  
         <toolbar />
         <surveys />
 
