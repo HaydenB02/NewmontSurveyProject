@@ -3,10 +3,12 @@
     <b-form inline>
       <h6 id="priority">Priority: {{surveyGroup.priority}}</h6>
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
-      <b-checkbox id="check-box"></b-checkbox>
-      <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
+      <div id="check-position"><b-checkbox :id="'check-' + surveyGroup.priority"></b-checkbox></div>
+      <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown">Toggle Data</b-button>
     </b-form>
-    <b-collapse id="table-collapse">hi</b-collapse>
+    <b-collapse :id="'collapse-' + surveyGroup.priority">
+      <b-card id="card">hi</b-card>
+    </b-collapse>
   </b-card>
 </template>
 
@@ -59,13 +61,18 @@ export default class SurveyCard extends Vue {
     margin-right: 2em;
   }
 
-  #check-box {
+  #check-position {
     position: absolute;
-    right: 2em;
+    right: 10em;
   }
 
   #dropdown {
     position: absolute;
-    right: 1em;
+    right: 0em;
+    margin: 1em;
+  }
+
+  #card {
+    margin: 1em
   }
 </style>
