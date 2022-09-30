@@ -42,6 +42,8 @@ library.add(faPlus, faCog);
 export default class Toolbar extends Vue {
     selectedHole = "";
     selectedSurvey = 1;
+    allowedPercent = 0;
+    
     @Watch('selectedHole', {immediate: true})
      onChildChanged(val: string, oldVal: string) {
       //Load the json in selected

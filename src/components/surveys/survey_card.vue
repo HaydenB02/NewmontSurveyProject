@@ -7,7 +7,7 @@
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown">Toggle Data</b-button>
     </b-form>
     <b-collapse :id="'collapse-' + surveyGroup.priority">
-      <b-card id="card">hi</b-card>
+      <div id="table-position"><survey-table :table_id="surveyGroup.priority" /></div>
     </b-collapse>
   </b-card>
 </template>
@@ -21,6 +21,7 @@ import App from "../../store/modules/app";
 import Data, { SurveyGroup } from "../../store/modules/data";
     
 //UI Components
+import SurveyTable from "./survey_table.vue";
     
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -29,7 +30,8 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
 library.add(faPlus, faCog);
     
 @Component({
-  components: {        
+  components: {     
+    SurveyTable,   
     Icon
   }
 })
@@ -72,7 +74,7 @@ export default class SurveyCard extends Vue {
     margin: 1em;
   }
 
-  #card {
+  #table-position{
     margin: 1em
   }
 </style>
