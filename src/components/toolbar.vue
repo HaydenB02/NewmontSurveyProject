@@ -46,8 +46,10 @@ export default class Toolbar extends Vue {
 
   @Watch('selectedHole', {immediate: true})
   onChildChanged(val: string, oldVal: string) {
-    //Load the json in selected
-    Data.commitGetHole({filename: val});
+    if(this.selectedHole != ""){
+      //Load the json in selected
+      Data.commitGetHole({filename: val});
+    }
   }
   
   get holeNames(): Array<HoleName> {
