@@ -1,5 +1,19 @@
 {
     "holes": [
+        {
+            "holeRowid": 8000000001,
+            "holeId": "TEST-HoleWithNoSurveys",
+            "project": "TEST",
+            "office": "Auckland",
+            "filename": "Test-HoleWithNoSurveys.json"
+        },
+        {
+            "holeRowid": 8000000002,
+            "holeId": "TEST-HoleWithLargerSurveySize",
+            "project": "TEST",
+            "office": "Auckland",
+            "filename": "Test-HoleWithLargerSurveySize.json"
+        },
         {         
             "holeRowid": 8000024061,
             "holeId": "NPC01",
