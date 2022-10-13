@@ -1,8 +1,7 @@
 <template>
   <div id="tester"></div>
 </template>
-
-<script src="js/three.js"></script>
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 <script lang="ts">
 //Imports
 import * as Three from 'three';		
