@@ -1,23 +1,28 @@
 <template>
-    <div id="tester"></div>
+  <div id="tester"></div>
 </template>
 
+<script src="js/three.js"></script>
 <script lang="ts">
 //Imports
-import Vue from "vue";
 import * as Three from 'three';		
 import { Camera, Scene, WebGLRenderer, Mesh } from "three";
 
-export default class Tester extends Vue {
-    camera: Camera;
-    scene: Scene;
-    renderer: WebGLRenderer;
-    mesh: Mesh;
-
-    init(){
+export default{
+  name: 'Tester',
+  data(){
+    return {
+      camera: Camera,
+      scene: Scene,
+      renderer: WebGLRenderer,
+      mesh: Mesh
+    }
+  },
+  methods: {
+    init: function(){
       let container = document.getElementById('tester');
 
-      this.camera = new Three.PerspectiveCamera(70, container.clientWidth/container.clientHeight, 0.01, 10);
+      this.camera = new Three.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10);
       this.camera.position.z = 1;
 
       this.scene = new Three.Scene();
@@ -31,13 +36,20 @@ export default class Tester extends Vue {
       this.renderer = new Three.WebGLRenderer({antialias: true});
       this.renderer.setSize(container.clientWidth, container.clientHeight);
       container.appendChild(this.renderer.domElement);
-    }
+    },
 
-    mounted(){
-        this.init();
+    animate: function(){
+      requestAnimationFrame(this.animate);
+        this.mesh.rotation.x += 0.01;
+        this.mesh.rotation.y += 0.02;
+        this.renderer.render(this.scene, this.camera);
     }
+  },
+  mounted(){
+    this.init();
+    this.animate();
+  }
 }
-
 </script>
 
 <!-- Global Style -->

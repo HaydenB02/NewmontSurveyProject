@@ -30,6 +30,7 @@ export default class App extends Vue {
   mounted() {
     AppData.commitLoadSession();
     Data.commitGetHoleNames();
+    Tester.call;
   }
 
 }
