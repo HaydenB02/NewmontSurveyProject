@@ -1,52 +1,46 @@
 <template>
   <div id="tester"></div>
 </template>
+
 <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 <script lang="ts">
 //Imports
-import * as Three from 'three';		
-import { Camera, Scene, WebGLRenderer, Mesh } from "three";
+import * as Three from 'three';	
 
 export default{
   name: 'Tester',
-  data(){
+  data: function(){
+    const camera = new Three.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10);
+    const scene = new Three.Scene();
+
+    const geometry = new Three.EdgesGeometry();
+    const material = new Three.MeshNormalMaterial();
+    const mesh = new Three.Mesh(geometry, material);
+
+    const renderer = new Three.WebGLRenderer({antialias: true});
+
     return {
-      camera: Camera,
-      scene: Scene,
-      renderer: WebGLRenderer,
-      mesh: Mesh
+      camera: camera,
+      scene: scene,
+      renderer: renderer,
+      mesh: mesh,
     }
   },
-  methods: {
-    init: function(){
-      let container = document.getElementById('tester');
 
-      this.camera = new Three.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10);
-      this.camera.position.z = 1;
-
-      this.scene = new Three.Scene();
-
-      let geometry = new Three.BoxGeometry(0.2, 0.2, 0.2);
-      let material = new Three.MeshNormalMaterial();
-
-      this.mesh = new Three.Mesh(geometry, material);
-      this.scene.add(this.mesh);
-
-      this.renderer = new Three.WebGLRenderer({antialias: true});
-      this.renderer.setSize(container.clientWidth, container.clientHeight);
-      container.appendChild(this.renderer.domElement);
-    },
-
-    animate: function(){
-      requestAnimationFrame(this.animate);
-        this.mesh.rotation.x += 0.01;
-        this.mesh.rotation.y += 0.02;
-        this.renderer.render(this.scene, this.camera);
-    }
+  created: function(){
+    this.scene.add(this.mesh);
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   },
+
   mounted(){
-    this.init();
-    this.animate();
+    document.getElementById('tester').appendChild(this.renderer.domElement);
+    this.renderer.render(this.scene, this.camera);
+  },
+
+  methods: {
+    animate: function(){
+      
+    }
   }
 }
 </script>
