@@ -15,7 +15,7 @@
         <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
       </b-form-select>
           
-      <b-form-input id="difference-input" v-model="allowedDistance" type="number"></b-form-input>
+      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" ></b-form-input>
       <div v-if="hole != null"><h4> {{hole.depthUnits}}</h4></div>
     </b-form>
 
@@ -28,7 +28,6 @@ import Vue from "vue";
 import { Component, Watch } from "vue-property-decorator";
     
 //Data Stores
-import App, { AppState } from "../store/modules/app";
 import Data, { HoleName, SurveyGroup, Hole } from "../store/modules/data";
     
 //UI Components

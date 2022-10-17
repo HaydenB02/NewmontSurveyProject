@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component, Prop, Watch } from "vue-property-decorator";
+import { Component} from "vue-property-decorator";
 
 //Data Stores
 import AppData from "./store/modules/app";
