@@ -14,6 +14,20 @@
             "office": "Auckland",
             "filename": "Test-HoleWithLargerSurveySize.json"
         },
+        {
+            "holeRowid": 8000000003,
+            "holeId": "TEST-Same",
+            "project": "TEST",
+            "office": "Auckland",
+            "filename": "Test-SameSurvey.json"
+        },
+        {
+            "holeRowid": 8000000004,
+            "holeId": "TEST-MoreSurveys",
+            "project": "TEST",
+            "office": "Auckland",
+            "filename": "Test-MoreSurveys.json"
+        },
         {         
             "holeRowid": 8000024061,
             "holeId": "NPC01",

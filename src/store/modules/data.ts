@@ -97,6 +97,7 @@ async function fetchHole(filename: string): Promise<Hole> {
 }
 
 async function updateSurveyGroups(state: DataState) {
+  state.hole.surveyGroups.sort((a, b) => a.priority - b.priority);
   state.surveyGroups = state.hole.surveyGroups.reverse();
 }
 
