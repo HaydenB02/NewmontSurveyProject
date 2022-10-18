@@ -68,7 +68,10 @@ const initialState: DataState = {
 };
 
 async function getHoleNames(state: DataState) {
-  state.holeNames = await fetchHoleNames();
+  try{
+    state.holeNames = await fetchHoleNames();
+  }
+  catch(rejectedValue){}
   await App.commitSetIsLoading({isLoading: false});
 }
 
@@ -79,7 +82,10 @@ async function fetchHoleNames(): Promise<Array<HoleName>> {
 }
 
 async function getHole(state: DataState, payload: {filename: string}) {
-  state.hole = await fetchHole(payload.filename);
+  try{
+    state.hole = await fetchHole(payload.filename);
+  }
+  catch(rejectedValue){}
   updateSurveyGroups(state);
   await App.commitSetIsLoading({isLoading: false});
 }

@@ -1,9 +1,9 @@
 <template>
-    <div id="surveys">
-      <div v-if="surveyGroups.length > 0">
-        <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :card_id="surveyGroup.priority" />
-      </div>
+  <div id="surveys">
+    <div v-if="surveyGroups.length > 0">
+      <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :card_id="surveyGroup.priority" />
     </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -57,22 +57,3 @@ export default class Surveys extends Vue {
   }
 </style>
 
-
-
-
-<!-- <div v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :value="surveyGroup">
-  <b-card id="survey-card">
-
-    <b-form inline>
-      <h4 id="priority-title">Priority: {{surveyGroup.priority}}</h4>
-      <b-checkbox></b-checkbox>
-    </b-form>
-
-    <b-form inline>
-      <h6 id="type-title">Survey Type: {{surveyGroup.surveyType}}</h6>
-      <b-button v-b-toggle.table-collapse id="dropdown">v</b-button>
-      <b-collapse id="table-collapse">hi</b-collapse>
-    </b-form>
-
-  </b-card>
-</div> -->

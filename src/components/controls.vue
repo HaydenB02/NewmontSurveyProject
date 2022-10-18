@@ -35,14 +35,6 @@ library.add(faPlus, faCog);
   }
 })
 export default class Controls extends Vue {
-  selectedHole = "";
-  selectedSurvey = 1;
-  @Watch('selectedHole', {immediate: true})
-  onChildChanged(val: string, oldVal: string) {
-    //Load the json in selected
-    Data.commitGetHole({filename: val});
-  }
-
   get holeNames(): Array<HoleName> {
     return Data.state.holeNames;
   }

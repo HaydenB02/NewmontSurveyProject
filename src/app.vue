@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <controls />
+    <tester />
     <notifications group="foo" />
   </div>
 </template>
@@ -15,10 +16,12 @@ import Data from "./store/modules/data";
 
 //UI Components
 import Controls from "./components/controls.vue";
+import Tester from "./components/tester.vue";
 
 @Component({
   components: {
     Controls,
+    Tester,
   }
 })
 

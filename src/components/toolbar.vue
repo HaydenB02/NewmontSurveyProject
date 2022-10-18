@@ -2,6 +2,11 @@
   <div id="toolbar">
 
     <b-form inline>
+      <p id="hole-title">Hole Selector:</p>
+      <p id="priority-title">Priority Selector:</p>
+      <p id="distance-title">Allowable Distance:</p>
+    </b-form>
+    <b-form inline>
       <b-form-select id="hole-dropdown" v-model="selectedHole">
         <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
       </b-form-select>
@@ -46,8 +51,10 @@ export default class Toolbar extends Vue {
 
   @Watch('selectedHole', {immediate: true})
   onChildChanged(val: string, oldVal: string) {
-    //Load the json in selected
-    Data.commitGetHole({filename: val});
+    if(this.selectedHole != ""){
+      //Load the json in selected
+      Data.commitGetHole({filename: val});
+    }
   }
   
   get holeNames(): Array<HoleName> {
@@ -87,6 +94,18 @@ export default class Toolbar extends Vue {
   }
 
   #difference-input {
+    width: 20%;
+  }
+
+  #hole-title {
+    width: 40%;
+  }
+
+  #priority-title {
+    width: 20%;
+  }
+
+  #distance-title {
     width: 20%;
   }
 
