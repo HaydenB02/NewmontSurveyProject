@@ -11,10 +11,9 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component, Watch } from "vue-property-decorator";
+import { Component} from "vue-property-decorator";
 
 //Data Stores
-import App, { AppState } from "../store/modules/app";
 import Data, { HoleName, SurveyGroup } from "../store/modules/data";
 
 //UI Components
@@ -31,7 +30,7 @@ library.add(faPlus, faCog);
   components: {
     Toolbar,
     Surveys,
-    Icon
+    Icon,
   }
 })
 export default class Controls extends Vue {
@@ -41,33 +40,6 @@ export default class Controls extends Vue {
 
   get surveyGroups(): Array<SurveyGroup> {
     return Data.state.surveyGroups;
-  }
-
-  get view(): string {
-    return App.state.view;
-  }
-
-  set view(view: string) {
-    App.state.view = view;
-  }
-
-  get search(): string {
-    return App.state.search;
-  }
-
-  set search(search: string) {
-    Data.commitSearch({search});
-    App.state.search = search;
-  }
-
-  get data_url(): string {
-    return App.state.data_url;
-  }
-
-  set data_url(url: string) {
-    App.state.data_url = url;
-    //Save user-entered data URL to local browser cache
-    localStorage.setItem('dataUrl', url);
   }
 }
 </script>
@@ -79,6 +51,9 @@ export default class Controls extends Vue {
 <!-- Local Style -->
 <style scoped>
   #controls {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 50%;
     height: 100%;
     background-color: white;

@@ -13,7 +13,6 @@
     import { Component, Prop } from "vue-property-decorator";
     
     //Data Stores
-    import App from "../../store/modules/app";
     import Data, { Survey, SurveyGroup } from "../../store/modules/data";
     
     //UI Components
@@ -30,6 +29,8 @@
       }
     })
     export default class PostTable extends Vue {
+      @Prop({type: Number}) table_id!: number;
+      
       columns = [
         {
           label: 'Depth',
@@ -47,39 +48,12 @@
           type: 'number'
         },
       ];
-    
 
-    @Prop({type: Number}) table_id!: number;
+      get surveyGroup(): SurveyGroup {
+        console.log(Data.state.surveyGroups.find(i => i.priority === this.table_id).surveys);
+        return Data.state.surveyGroups.find(i => i.priority === this.table_id);
+      }
 
-    get surveyGroup(): SurveyGroup {
-      console.log(Data.state.surveyGroups.find(i => i.priority === this.table_id).surveys);
-      return Data.state.surveyGroups.find(i => i.priority === this.table_id);
-    }
-
-    
-      get tableSort(): Array<any> {
-        return App.state.table.sort;
-      }
-    
-      set tableSort(tableSort: Array<any>) {
-        App.state.table.sort = tableSort;
-      }
-    
-      
-      onRowClick(params: any) {
-        this.$router.push('/' + params.row.id);
-      }
-    
-      onSortChange(params: any) {
-        this.tableSort = params;
-      }
-    
-      onSearch(params: any) {
-        //This does not connect to the 'search' string in our App State
-        //This could be used to supply the in-table search term to our state and use elsewhere:
-    
-        //this.search = params.searchTerm;
-      }
     }
     </script>
     

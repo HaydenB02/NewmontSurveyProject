@@ -4,7 +4,7 @@
       <h6 id="priority">Priority: {{surveyGroup.priority}}</h6>
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
       <div id="check-position"><b-checkbox :id="'check-' + surveyGroup.priority"></b-checkbox></div>
-      <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown">Toggle Data</b-button>
+      <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
     </b-form>
     <b-collapse :id="'collapse-' + surveyGroup.priority">
       <div id="table-position"><survey-table :table_id="surveyGroup.priority" /></div>
@@ -17,7 +17,6 @@ import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
     
 //Data Stores
-import App from "../../store/modules/app";
 import Data, { SurveyGroup } from "../../store/modules/data";
     
 //UI Components
@@ -25,9 +24,9 @@ import SurveyTable from "./survey_table.vue";
     
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
-library.add(faPlus, faCog);
+library.add(faCaretDown);
     
 @Component({
   components: {     
@@ -65,7 +64,7 @@ export default class SurveyCard extends Vue {
 
   #check-position {
     position: absolute;
-    right: 10em;
+    right: 5em;
   }
 
   #dropdown {
