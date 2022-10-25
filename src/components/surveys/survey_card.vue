@@ -1,11 +1,19 @@
 <template>
   <b-card id="surveyCard" class="text-center">
+    <!--Survey Controls-->
     <b-form inline>
+      <!--Labels-->
       <h6 id="priority">Priority: {{surveyGroup.priority}}</h6>
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
-      <div id="check-position"><b-checkbox :id="'check-' + surveyGroup.priority"></b-checkbox></div>
+      <!--Checkboxes-->
+      <div id="checkboxes">
+        <b-form-checkbox v-if="surveyGroup === surveyGroups[0]" :checked="true" :v-model="checked"></b-form-checkbox>
+        <b-form-checkbox v-else :v-model="checked"></b-form-checkbox>
+      </div>
+      <!--Dropdown Button-->
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
     </b-form>
+    <!--Survey Tables-->
     <b-collapse :id="'collapse-' + surveyGroup.priority">
       <div id="table-position"><survey-table :table_id="surveyGroup.priority" /></div>
     </b-collapse>
@@ -14,7 +22,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component, Prop } from "vue-property-decorator";
+import { Component, Prop, Watch } from "vue-property-decorator";
     
 //Data Stores
 import Data, { SurveyGroup } from "../../store/modules/data";
@@ -35,10 +43,20 @@ library.add(faCaretDown);
   }
 })
 export default class SurveyCard extends Vue {
+  checked = false;
   @Prop({type: Number}) card_id!: number;
+
+  @Watch('checked', {immediate: true})
+  onChildChanged(val: string, oldVal: string) {
+    //update 3D scene with survey
+  }
 
   get surveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id);
+  }
+
+  get surveyGroups(): Array<SurveyGroup> {
+    return Data.state.surveyGroups;
   }
 }
 </script>
@@ -62,7 +80,7 @@ export default class SurveyCard extends Vue {
     margin-right: 2em;
   }
 
-  #check-position {
+  #checkboxes {
     position: absolute;
     right: 5em;
   }

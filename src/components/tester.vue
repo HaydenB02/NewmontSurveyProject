@@ -4,50 +4,74 @@
 
 <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 <script lang="ts">
-//Imports
-import * as Three from 'three';	
-
-//Icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons';
 import Vue from 'vue';
 import { Component} from "vue-property-decorator";
-library.add(faPlus, faCog);
+
+//Three Imports
+import * as Three from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
+//Data Stores
+import Data from "../store/modules/data";
+
 
 @Component({
   components: {}
 })
 export default class Tester extends Vue {
-  scene: Three.Scene = null;
   renderer: Three.Renderer = null;
   camera: Three.PerspectiveCamera = null;
+  controls: OrbitControls = null;
+  container: HTMLElement = null;
 
   mounted() {
-    const container = document.getElementById('tester');
+    this.container = document.getElementById('tester');
+    window.addEventListener('resize', this.onWindowResize, false);
 
-    this.renderer = new Three.WebGLRenderer();
-    this.camera = new Three.PerspectiveCamera(70, container.clientWidth/container.clientHeight);
-    this.scene = new Three.Scene();
+    this.renderer = new Three.WebGLRenderer({antialias: true});
+    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight-1);
+    this.container.appendChild(this.renderer.domElement);
+
+    this.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
+    Data.state.scene = new Three.Scene();
+    Data.state.scene.add(new Three.AxesHelper(5));
 
     this.camera.position.x = 0;
     this.camera.position.y = 10;
-    this.camera.position.z = 5;
+    this.camera.position.z = 0;
   
-    this.scene.background = new Three.Color('red');
-
+    Data.state.scene.background = new Three.Color('black');
+    
     let geometry = new Three.BoxGeometry(20, 20, 20);
-    let material = new Three.MeshNormalMaterial();
+    let material = new Three.MeshBasicMaterial({wireframe: true});
     let mesh = new Three.Mesh(geometry, material);
 
     mesh.position.x = 100;
     mesh.position.y = 0;
     mesh.position.z = 0;
 
+    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.update();
+
     this.camera.lookAt(20, 0, 0);
-    this.scene.add(mesh);
-    this.renderer.setSize(container.clientWidth, container.clientHeight);
-    container.appendChild(this.renderer.domElement);
-    this.renderer.render(this.scene, this.camera);
+    Data.state.scene.add(mesh);
+    this.renderer.render(Data.state.scene, this.camera);
+
+    this.animate();
+  }
+
+  onWindowResize() {
+    this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
+    this.camera.updateProjectionMatrix();
+    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+    this.renderer.render(Data.state.scene, this.camera);
+  }
+
+  animate() {
+    requestAnimationFrame( this.animate );
+    // required if controls.enableDamping or controls.autoRotate are set to true
+    this.controls.update();
+    this.renderer.render( Data.state.scene, this.camera );
   }
 }
 
@@ -110,8 +134,6 @@ export default class Tester extends Vue {
     right: 0px;
     width: 50%;
     height: 100%;
-    background-color: black;
-    border: 3px solid red;
-    margin-left: 50%;
+    background-color: blue;
   }
 </style>

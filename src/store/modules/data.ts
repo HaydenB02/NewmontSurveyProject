@@ -56,6 +56,7 @@ export interface DataState {
    surveyGroup: SurveyGroup,
    search_results: Array<HoleName>,
    holes: Array<Hole>
+   scene: THREE.Scene;
 }
 
 const initialState: DataState = {
@@ -64,7 +65,8 @@ const initialState: DataState = {
   surveyGroups: [],
   surveyGroup: null,
   search_results: [],
-  holes: []
+  holes: [],
+  scene: null
 };
 
 async function getHoleNames(state: DataState) {

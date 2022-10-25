@@ -11,11 +11,11 @@
         <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
       </b-form-select>
 
-      <b-form-select id="priority-dropdown" v-model="selectedSurvey">
+      <b-form-select id="priority-dropdown" v-model="selectedSurvey" :value="selectedSurvey">
         <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey">{{survey.priority}}</b-form-select-option>
       </b-form-select>
           
-      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" ></b-form-input>
+      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0"></b-form-input>
       <div v-if="hole != null"><h4> {{hole.depthUnits}}</h4></div>
     </b-form>
 
@@ -45,7 +45,7 @@ library.add(faPlus, faCog);
 })
 export default class Toolbar extends Vue {
   selectedHole = "";
-  selectedSurvey = 1;
+  selectedSurvey: number;
   allowedDistance = 0;
 
   @Watch('selectedHole', {immediate: true})
@@ -53,6 +53,7 @@ export default class Toolbar extends Vue {
     if(this.selectedHole != ""){
       //Load the json in selected
       Data.commitGetHole({filename: val});
+      this.selectedSurvey = Data.state.surveyGroups[0].priority;
     }
   }
   
@@ -105,7 +106,7 @@ export default class Toolbar extends Vue {
   }
 
   #distance-title {
-    width: 20%;
+    width: 25%;
   }
 
 </style>
