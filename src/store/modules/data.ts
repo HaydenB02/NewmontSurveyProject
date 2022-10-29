@@ -36,17 +36,28 @@ export interface Hole {
 export interface SurveyGroup {
     priority: number,
     surveyType: string,
-    surveys: Array<Survey>
+    surveys: Array<Survey>,
+    isSelected: boolean,
+    isReference: boolean,
 }
 
 export interface Survey {
     surveyRowid: number,
-    depth: number
+    depth: number,
     inclination: number,
     aziTrueNth: number,
     description: string,
     utcDateAdded: Date,
-    utcDateUpdated: Date
+    utcDateUpdated: Date,
+    point: Point,
+}
+
+export interface Point {
+  depth: number,
+  x: number,
+  y: number,
+  z: number,
+  inRange: boolean,
 }
 
 export interface DataState {
@@ -70,10 +81,7 @@ const initialState: DataState = {
 };
 
 async function getHoleNames(state: DataState) {
-  try{
-    state.holeNames = await fetchHoleNames();
-  }
-  catch(rejectedValue){}
+  state.holeNames = await fetchHoleNames();
   await App.commitSetIsLoading({isLoading: false});
 }
 
@@ -84,11 +92,8 @@ async function fetchHoleNames(): Promise<Array<HoleName>> {
 }
 
 async function getHole(state: DataState, payload: {filename: string}) {
-  try{
-    state.hole = await fetchHole(payload.filename);
-  }
-  catch(rejectedValue){}
-  updateSurveyGroups(state);
+  state.hole = await fetchHole(payload.filename);
+  await updateSurveyGroups(state);
   await App.commitSetIsLoading({isLoading: false});
 }
 
@@ -100,38 +105,9 @@ async function fetchHole(filename: string): Promise<Hole> {
 
 async function updateSurveyGroups(state: DataState) {
   state.hole.surveyGroups.sort((a, b) => a.priority - b.priority);
-  state.surveyGroups = state.hole.surveyGroups.reverse();
+  state.hole.surveyGroups.reverse();
+  state.surveyGroups = state.hole.surveyGroups;
 }
-
-const searchOptions: Fuse.FuseOptions<HoleName> = {
-  shouldSort: true,
-  threshold: 0.3,
-  distance: 100,
-  maxPatternLength: 32,
-  keys: [
-    {
-      name: 'title',
-      weight: 0.7
-    },
-    {
-      name: 'body',
-      weight: 0.3
-    }
-  ]
-}
-
-function search(state: DataState, payload: {search: string}) {
-  if(payload.search == '')
-  {
-    Vue.set(state, 'search_results', []);
-  }
-  else {
-    let fuse = new Fuse(state.holeNames, searchOptions);
-
-    Vue.set(state, 'search_results', fuse.search(payload.search));
-  }
-}
-
 
 const b = getStoreBuilder<RootState>().module("data", initialState);
 
@@ -140,7 +116,6 @@ const Data = {
    get state() { return stateGetter(); },
 
    commitGetHoleNames: b.commit(getHoleNames),
-   commitSearch: b.commit(search),
    commitGetHole: b.commit(getHole)
 };
 

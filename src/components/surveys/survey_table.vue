@@ -50,7 +50,6 @@
       ];
 
       get surveyGroup(): SurveyGroup {
-        console.log(Data.state.surveyGroups.find(i => i.priority === this.table_id).surveys);
         return Data.state.surveyGroups.find(i => i.priority === this.table_id);
       }
 

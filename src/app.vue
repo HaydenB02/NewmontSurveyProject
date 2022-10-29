@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <controls />
-    <tester />
+    <three-setup />
     <notifications group="foo" />
   </div>
 </template>
@@ -16,12 +16,12 @@ import Data from "./store/modules/data";
 
 //UI Components
 import Controls from "./components/controls.vue";
-import Tester from "./components/tester.vue";
+import ThreeSetup from "./components/three_setup.vue";
 
 @Component({
   components: {
     Controls,
-    Tester,
+    ThreeSetup,
   }
 })
 

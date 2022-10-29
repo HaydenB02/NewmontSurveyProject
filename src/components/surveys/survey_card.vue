@@ -7,8 +7,8 @@
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
       <!--Checkboxes-->
       <div id="checkboxes">
-        <b-form-checkbox v-if="surveyGroup === surveyGroups[0]" :checked="true" :v-model="checked"></b-form-checkbox>
-        <b-form-checkbox v-else :v-model="checked"></b-form-checkbox>
+        <b-form-checkbox v-if="surveyGroup === surveyGroups[0]" :checked="true" :v-model="surveyGroup.isSelected"></b-form-checkbox>
+        <b-form-checkbox v-else :v-model="surveyGroup.isSelected"></b-form-checkbox>
       </div>
       <!--Dropdown Button-->
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
@@ -43,13 +43,7 @@ library.add(faCaretDown);
   }
 })
 export default class SurveyCard extends Vue {
-  checked = false;
   @Prop({type: Number}) card_id!: number;
-
-  @Watch('checked', {immediate: true})
-  onChildChanged(val: string, oldVal: string) {
-    //update 3D scene with survey
-  }
 
   get surveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id);
