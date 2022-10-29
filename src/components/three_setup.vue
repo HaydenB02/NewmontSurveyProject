@@ -14,7 +14,7 @@ import * as Three from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //Data Stores
-import Data, { SurveyGroup } from "../store/modules/data";
+import Data, { Survey, SurveyGroup } from "../store/modules/data";
 
 //UI Components
 import SurveyModel from "./surveys/survey_model.vue";
@@ -41,12 +41,12 @@ export default class ThreeSetup extends Vue {
 
     this.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
     this.scene = new Three.Scene();
-    this.scene.add(new Three.AxesHelper(5));
+    this.scene.add(new Three.AxesHelper(1));
 
-    this.camera.position.x = 0;
+    this.camera.position.x = 10;
     this.camera.position.y = 10;
-    this.camera.position.z = 0;
-    this.camera.lookAt(20, 0, 0);
+    this.camera.position.z = 10;
+    this.camera.lookAt(0, 0, 0);
   
     this.scene.background = new Three.Color('black');
     
@@ -66,7 +66,6 @@ export default class ThreeSetup extends Vue {
 
   animate() {
     requestAnimationFrame( this.animate );
-    // required if controls.enableDamping or controls.autoRotate are set to true
     this.controls.update();
     this.renderer.render( this.scene, this.camera );
   }

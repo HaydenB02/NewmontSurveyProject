@@ -22,8 +22,7 @@ library.add(faPlus, faCog);
     
 @Component({
   components: {
-    SurveyCard,
-    Icon
+    SurveyCard
   }
 })
 export default class Surveys extends Vue {
