@@ -20,17 +20,12 @@ import Data, { HoleName, SurveyGroup } from "../store/modules/data";
 import Toolbar from "./toolbar.vue";
 import Surveys from "./surveys.vue";
 
-//Icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
-library.add(faPlus, faCog);
+
 
 @Component({
   components: {
     Toolbar,
     Surveys,
-    Icon,
   }
 })
 export default class Controls extends Vue {

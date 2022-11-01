@@ -15,17 +15,8 @@
     //Data Stores
     import Data, { Survey, SurveyGroup } from "../../store/modules/data";
     
-    //UI Components
-    
-    //Icons
-    import { library } from '@fortawesome/fontawesome-svg-core';
-    import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons';
-    import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
-    library.add(faPlus, faCog);
-    
     @Component({
       components: {
-        Icon
       }
     })
     export default class PostTable extends Vue {

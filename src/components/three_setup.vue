@@ -1,6 +1,6 @@
 <template>
   <div id="threeSetup">
-    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="survey"/>
+    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="survey.priority"/>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import * as Three from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //Data Stores
-import Data, { Survey, SurveyGroup } from "../store/modules/data";
+import Data, { SurveyGroup } from "../store/modules/data";
 
 //UI Components
 import SurveyModel from "./surveys/survey_model.vue";
@@ -26,17 +26,15 @@ import SurveyModel from "./surveys/survey_model.vue";
 })
 export default class ThreeSetup extends Vue {
   renderer: Three.Renderer = null;
-  camera: Three.PerspectiveCamera = null;
   controls: OrbitControls = null;
   container: HTMLElement = null;
-  scene: Three.Scene = Data.state.scene;
 
   mounted() {
     this.container = document.getElementById('threeSetup');
     window.addEventListener('resize', this.onWindowResize, false);
 
     this.renderer = new Three.WebGLRenderer({antialias: true});
-    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight-1);
+    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
     this.container.appendChild(this.renderer.domElement);
 
     this.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
@@ -46,13 +44,23 @@ export default class ThreeSetup extends Vue {
     this.camera.position.x = 10;
     this.camera.position.y = 10;
     this.camera.position.z = 10;
-    this.camera.lookAt(0, 0, 0);
+    if(this.referenceSurveyGroup != undefined){
+      let midID = Math.floor(this.referenceSurveyGroup.surveys.length / 2);
+      let midPoint = this.referenceSurveyGroup.surveys[midID].point;
+      this.camera.lookAt(midPoint.x, midPoint.z, midPoint.y);
+    }
+    else{
+      this.camera.lookAt(0, 0, 0);
+    }
   
     this.scene.background = new Three.Color('black');
     
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
+
+    console.log(this.camera);
+    console.log(Data.state.camera);
 
     this.animate();
   }
@@ -66,7 +74,6 @@ export default class ThreeSetup extends Vue {
 
   animate() {
     requestAnimationFrame( this.animate );
-    this.controls.update();
     this.renderer.render( this.scene, this.camera );
   }
 
@@ -76,6 +83,22 @@ export default class ThreeSetup extends Vue {
 
   get referenceSurveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(e => e.isReference); 
+  }
+
+  get scene(): Three.Scene {
+    return Data.state.scene;
+  }
+
+  get camera(): Three.PerspectiveCamera {
+    return Data.state.camera;
+  }
+
+  set scene(s: Three.Scene) {
+    Data.state.scene = s;
+  }
+
+  set camera(c: Three.PerspectiveCamera) {
+    Data.state.camera = c;
   }
 }
 
@@ -94,5 +117,6 @@ export default class ThreeSetup extends Vue {
     width: 50%;
     height: 100%;
     background-color: blue;
+    overflow-y: hidden;
   }
 </style>

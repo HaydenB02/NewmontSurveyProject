@@ -40,7 +40,6 @@ function fetchHole(filename) {
     return __awaiter(this, void 0, void 0, function* () {
         const call = yield fetch("../../../Data/Holes/" + filename);
         const response = yield call.json();
-        console.log(response);
         return response;
     });
 }

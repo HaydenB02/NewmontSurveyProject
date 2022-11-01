@@ -14,12 +14,6 @@ import Data, { SurveyGroup } from "../store/modules/data";
 //UI Components
 import SurveyCard from "./surveys/survey_card.vue";
     
-//Icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
-library.add(faPlus, faCog);
-    
 @Component({
   components: {
     SurveyCard
