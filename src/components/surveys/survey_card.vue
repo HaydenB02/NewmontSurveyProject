@@ -7,8 +7,7 @@
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
       <!--Checkboxes-->
       <div id="checkboxes">
-        <b-form-checkbox v-if="surveyGroup === surveyGroups[0]" :checked="true" v-model="selected">{{selected}}</b-form-checkbox>
-        <b-form-checkbox v-else v-model="selected">{{selected}}</b-form-checkbox>
+        <b-form-checkbox v-model="selected">{{selected}}</b-form-checkbox>
       </div>
       <!--Dropdown Button-->
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
@@ -45,12 +44,26 @@ library.add(faCaretDown);
 export default class SurveyCard extends Vue {
   @Prop({type: Number}) card_id!: number;
 
+  @Watch("selected", {immediate: true})
+  onChildChanged(val: boolean, oldVal:boolean){
+    $("#threeSetup").load(window.location.href + " #threeSetup");
+    $("#threeSetup").load(" #threeSetup > *");
+  }
+
   get surveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id);
   }
 
   get selected(): boolean {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id).isSelected;
+  }
+
+  set selected(b: boolean) {
+    let mySurvey = Data.state.surveyGroups.find(i => i.priority === this.card_id);
+    let newSurvey = mySurvey;
+    newSurvey.isSelected = b;
+    let index = Data.state.surveyGroups.indexOf(mySurvey);
+    Vue.set(Data.state.surveyGroups, index, newSurvey);
   }
 
   get surveyGroups(): Array<SurveyGroup> {

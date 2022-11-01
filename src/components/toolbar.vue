@@ -44,6 +44,7 @@ export default class Toolbar extends Vue {
     if(this.selectedHole != ""){
       //Load the json in selected
       Data.commitGetHole({filename: val});
+      //TODO: reload check boxes, three scene, and data
     }
   }
 

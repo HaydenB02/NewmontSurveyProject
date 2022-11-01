@@ -129,14 +129,8 @@ async function updateSurveyGroups(state: DataState) {
     //TODO: get camera to correct location and look at lines
 
     let midID = Math.floor(refSurvey.surveys.length / 2);
-    state.camera.position.set(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
+    state.camera.position.set(refSurvey.surveys[midID].point.x + 15, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
     state.camera.lookAt(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
-    
-    
-    let coord = new Three.AxesHelper(3);
-    coord.position.set(refSurvey.surveys[0].point.x, refSurvey.surveys[0].point.y, refSurvey.surveys[0].point.z);
-    state.scene.add(coord);
-
   }
   
   for(let i=0; i<state.surveyGroups.length; i++){
@@ -201,6 +195,7 @@ function calcPoints(survey: SurveyGroup) {
     }
     else{
       //if no reference exists all are in range
+      //should never happen but safety first
       point.inRange = true;
     }
 

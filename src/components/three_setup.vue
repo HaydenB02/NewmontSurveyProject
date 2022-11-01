@@ -39,7 +39,7 @@ export default class ThreeSetup extends Vue {
 
     this.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
     this.scene = new Three.Scene();
-    this.scene.add(new Three.AxesHelper(1));
+    this.scene.add(new Three.AxesHelper(5));
 
     this.camera.position.x = 10;
     this.camera.position.y = 10;

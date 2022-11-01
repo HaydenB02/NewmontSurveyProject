@@ -23,7 +23,7 @@ export default class SurveyModel extends Vue {
 
   mounted(){
     //create drawing material
-    let dotGeometry = new Three.SphereGeometry(1, 10, 10);
+    let dotGeometry = new Three.SphereGeometry(1/this.selectedSurveyGroups.length, 10, 10);
     let goodMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Green")});
     let badMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Red")});
     
@@ -59,7 +59,7 @@ export default class SurveyModel extends Vue {
 
       let lineMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Green")});
       let curve = new Three.LineCurve3(lastVector, vector);
-      let lineGeom = new Three.TubeGeometry(curve, 1, 0.5, 8, false);
+      let lineGeom = new Three.TubeGeometry(curve, 1, 0.5/this.selectedSurveyGroups.length, 8, false);
 
       let line = new Three.Mesh(lineGeom, lineMaterial);
       this.scene.add(line);
@@ -68,6 +68,10 @@ export default class SurveyModel extends Vue {
 
   get scene(): Three.Scene {
     return Data.state.scene;
+  }
+
+  get selectedSurveyGroups(): Array< SurveyGroup > {
+    return Data.state.surveyGroups.filter(e => e.isSelected);
   }
     
 }
