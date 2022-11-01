@@ -63,8 +63,6 @@ export default class Toolbar extends Vue {
         surveys[i].isReference = false;
       }
 
-      console.log(val, Data.state.surveyGroups.find(e => e.priority == val))
-
       Data.state.surveyGroups.find(e => e.priority == val).isReference = true;
     }
   }

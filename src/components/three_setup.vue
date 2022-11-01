@@ -59,9 +59,6 @@ export default class ThreeSetup extends Vue {
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
 
-    console.log(this.camera);
-    console.log(Data.state.camera);
-
     this.animate();
   }
 

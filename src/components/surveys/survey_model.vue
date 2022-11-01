@@ -24,12 +24,8 @@ export default class SurveyModel extends Vue {
   mounted(){
     //create drawing material
     let dotGeometry = new Three.SphereGeometry(1, 10, 10);
-    let goodMaterial = new Three.MeshBasicMaterial({
-      color: new Three.Color("Green")
-    });
-    let badMaterial = new Three.MeshBasicMaterial({
-      color: new Three.Color("Red")
-    })
+    let goodMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Green")});
+    let badMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Red")});
     
     //draw first dot
     let dot = new Three.Mesh(dotGeometry, goodMaterial);
@@ -40,23 +36,33 @@ export default class SurveyModel extends Vue {
 
     //draw remaining dots and lines from previous dot to current dot
     for(let i=1; i<this.surveys.length; i++){
+      //draw next dot
       let loopDot: Three.Mesh;
-        if(this.surveys[i].point.inRange){
-          loopDot = new Three.Mesh(dotGeometry, goodMaterial);
-        }
-        else{
-          loopDot = new Three.Mesh(dotGeometry, badMaterial);
-        }
+      if(this.surveys[i].point.inRange){
+        loopDot = new Three.Mesh(dotGeometry, goodMaterial);
+      }
+      else{
+        loopDot = new Three.Mesh(dotGeometry, badMaterial);
+      }
 
-        let lastPoint = this.surveys[i-1].point;
-        point = this.surveys[i].point;
+      point = this.surveys[i].point;
 
-        console.log(point);
-        loopDot.position.set(point.x, point.z, point.y);
-        this.scene.add(loopDot);
+      console.log(point);
+      loopDot.position.set(point.x, point.z, point.y);
+      this.scene.add(loopDot);
+        
+      //draw line from previous dot to this dot
+      let lastPoint = this.surveys[i-1].point;
 
+      let lastVector = new Three.Vector3(lastPoint.x, lastPoint.z, lastPoint.y);
+      let vector = new Three.Vector3(point.x, point.z, point.y);
 
-        this.survey.surveys[i].point
+      let lineMaterial = new Three.MeshBasicMaterial({color: new Three.Color("Green")});
+      let curve = new Three.LineCurve3(lastVector, vector);
+      let lineGeom = new Three.TubeGeometry(curve, 1, 0.5, 8, false);
+
+      let line = new Three.Mesh(lineGeom, lineMaterial);
+      this.scene.add(line);
     }
   }
 

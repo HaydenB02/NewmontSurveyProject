@@ -116,6 +116,10 @@ async function updateSurveyGroups(state: DataState) {
   //set initial reference to first
   state.surveyGroups[0].isReference = true;
   state.surveyGroups[0].isSelected = true;
+  for(let i=1; i<state.surveyGroups.length; i++){
+    state.surveyGroups[i].isReference = false;
+    state.surveyGroups[i].isSelected = false;
+  }
 
   //load points
   if(state.surveyGroups.find(e => e.isReference) != undefined){
@@ -125,7 +129,6 @@ async function updateSurveyGroups(state: DataState) {
     //TODO: get camera to correct location and look at lines
 
     let midID = Math.floor(refSurvey.surveys.length / 2);
-    console.log(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.y, refSurvey.surveys[midID].point.z);
     state.camera.position.set(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
     state.camera.lookAt(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
     

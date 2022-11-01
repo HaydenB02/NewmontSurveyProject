@@ -2,6 +2,7 @@
     <vue-good-table
     :columns = "columns"
     :rows = "surveyGroup.surveys"
+    
     max-height="20em"
     />
 
@@ -13,7 +14,7 @@
     import { Component, Prop } from "vue-property-decorator";
     
     //Data Stores
-    import Data, { Survey, SurveyGroup } from "../../store/modules/data";
+    import Data, { SurveyGroup } from "../../store/modules/data";
     
     @Component({
       components: {
