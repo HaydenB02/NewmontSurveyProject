@@ -1,7 +1,7 @@
 <template>
     <vue-good-table
     :columns = "columns"
-    :rows = "surveyGroup.surveys"
+    :rows = "rows"
     
     max-height="20em"
     />
@@ -40,6 +40,33 @@
           type: 'number'
         },
       ];
+
+      rows: Array<Object> = [];
+
+      mounted() {
+        for(let i=0; i<this.surveyGroup.surveys.length; i++){
+          let survey = this.surveyGroup.surveys[i];
+          let row: any = null;
+          if(survey.point.inRange){
+            row = {
+            id: i,
+            depth: survey.depth,
+            inclination: survey.inclination,
+            aziTrueNth: survey.aziTrueNth,
+            }
+          }
+          else{
+            row= {
+            id: i,
+            depth: survey.depth,
+            inclination: survey.inclination,
+            aziTrueNth: survey.aziTrueNth,
+            _rowVariant: "danger",
+          }
+          }
+          this.rows.push(row);
+        }
+      }
 
       get surveyGroup(): SurveyGroup {
         return Data.state.surveyGroups.find(i => i.priority === this.table_id);

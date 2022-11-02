@@ -1,6 +1,8 @@
 <template>
   <div id="threeSetup">
-    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="survey.priority"/>
+    <div v-if="!isLoading">
+    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="survey.holeId + survey.priority * 10000"/>
+    </div>
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //Data Stores
 import Data, { SurveyGroup } from "../store/modules/data";
+import App from "../store/modules/app";
 
 //UI Components
 import SurveyModel from "./surveys/survey_model.vue";
@@ -25,7 +28,6 @@ import SurveyModel from "./surveys/survey_model.vue";
   }
 })
 export default class ThreeSetup extends Vue {
-  renderer: Three.Renderer = null;
   controls: OrbitControls = null;
   container: HTMLElement = null;
 
@@ -90,12 +92,24 @@ export default class ThreeSetup extends Vue {
     return Data.state.camera;
   }
 
+  get renderer(): Three.Renderer {
+    return Data.state.renderer;
+  }
+
   set scene(s: Three.Scene) {
     Data.state.scene = s;
   }
 
   set camera(c: Three.PerspectiveCamera) {
     Data.state.camera = c;
+  }
+
+  set renderer(r: Three.Renderer) {
+    Data.state.renderer = r;
+  }
+
+  get isLoading(): boolean {
+    return App.state.isLoading;
   }
 }
 

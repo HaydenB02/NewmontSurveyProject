@@ -71,18 +71,20 @@ export interface DataState {
    holes: Array<Hole>,
    scene: Three.Scene,
    camera: Three.PerspectiveCamera,
+   renderer: Three.Renderer;
 }
 
 const initialState: DataState = {
   holeNames: [],
   hole: null,
-  allowedDistance: 5,
+  allowedDistance: 0,
   surveyGroups: [],
   surveyGroup: null,
   search_results: [],
   holes: [],
   scene: null,
-  camera: null
+  camera: null,
+  renderer: null
 };
 
 async function getHoleNames(state: DataState) {
@@ -97,9 +99,10 @@ async function fetchHoleNames(): Promise<Array<HoleName>> {
 }
 
 async function getHole(state: DataState, payload: {filename: string}) {
+  App.commitSetIsLoading({isLoading: true});
   state.hole = await fetchHole(payload.filename);
-  updateSurveyGroups(state);
-  await App.commitSetIsLoading({isLoading: false});
+  await updateSurveyGroups(state);
+  App.commitSetIsLoading({isLoading: false});
 }
 
 async function fetchHole(filename: string): Promise<Hole> {
@@ -114,17 +117,21 @@ async function updateSurveyGroups(state: DataState) {
   state.surveyGroups = state.hole.surveyGroups;
 
   //set initial reference to first
-  state.surveyGroups[0].isReference = true;
-  state.surveyGroups[0].isSelected = true;
+  let surveyGroup = state.surveyGroups[0];
+  surveyGroup.isReference = true;
+  surveyGroup.isSelected = true;
+  Vue.set(state.surveyGroups, 0, surveyGroup);
   for(let i=1; i<state.surveyGroups.length; i++){
-    state.surveyGroups[i].isReference = false;
-    state.surveyGroups[i].isSelected = false;
+    surveyGroup = state.surveyGroups[i];
+    surveyGroup.isReference = false;
+    surveyGroup.isSelected = false;
+    Vue.set(state.surveyGroups, i, surveyGroup);
   }
 
   //load points
   if(state.surveyGroups.find(e => e.isReference) != undefined){
     let refSurvey = state.surveyGroups.find(e => e.isReference);
-    calcPoints(refSurvey)
+    calcPoints(refSurvey);
 
     //TODO: get camera to correct location and look at lines
 
@@ -203,6 +210,46 @@ function calcPoints(survey: SurveyGroup) {
   }
 }
 
+function resetRange(state: DataState) {
+  for(let i=0; i<state.surveyGroups.length; i++){
+    let surveyGroup = state.surveyGroups[i];
+    console.log(state.surveyGroups[i])
+    for(let j=0; j<surveyGroup.surveys.length; i++){
+      if(state.surveyGroups[i].isReference){
+        //reference survey every point in range
+        state.surveyGroups[i].surveys[j].point.inRange = true;
+      }
+      else if(state.surveyGroups.find(e => e.isReference) != undefined){
+        let refSurvey = state.surveyGroups.find(e => e.isReference);
+  
+        if(refSurvey.surveys.length > i){
+          let point = state.surveyGroups[i].surveys[j].point;
+          let diffX = point.x - refSurvey.surveys[j].point.x;
+          let diffY = point.y - refSurvey.surveys[j].point.y;
+          let diffZ = point.z - refSurvey.surveys[j].point.z;
+  
+          let diff = Math.sqrt(diffX^2 + diffY^2 + diffZ^2);
+          if(diff <= state.allowedDistance){
+            point.inRange = true;
+          }
+          else{
+            point.inRange = false;
+          }
+        }
+        else{
+          //TODO: should points past the furthest point of the reference be considered out of range?
+          state.surveyGroups[i].surveys[j].point.inRange = false;
+        }
+      }
+      else{
+        //if no reference exists all are in range
+        //should never happen but safety first
+        state.surveyGroups[i].surveys[j].point.inRange = true;
+      }
+    }
+  }
+}
+
 const b = getStoreBuilder<RootState>().module("data", initialState);
 
 const stateGetter = b.state();
@@ -210,7 +257,8 @@ const Data = {
    get state() { return stateGetter(); },
 
    commitGetHoleNames: b.commit(getHoleNames),
-   commitGetHole: b.commit(getHole)
+   commitGetHole: b.commit(getHole),
+   commitResetRange: b.commit(resetRange)
 };
 
 export default Data;

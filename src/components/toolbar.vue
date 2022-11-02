@@ -15,7 +15,7 @@
         <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey" >{{survey.priority}}</b-form-select-option>
       </b-form-select>
           
-      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0"></b-form-input>
+      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true"></b-form-input>
       <div v-if="hole != null"><h4> {{hole.depthUnits}}</h4></div>
     </b-form>
 
@@ -37,12 +37,14 @@ import Data, { HoleName, SurveyGroup, Hole } from "../store/modules/data";
 export default class Toolbar extends Vue {
   selectedHole = "";
   selectedSurvey: number = -1;
-  allowedDistance = 0;
 
   @Watch('selectedHole', {immediate: true})
   onHoleChanged(val: string, oldVal: string) {
     if(this.selectedHole != ""){
       //Load the json in selected
+      Data.state.scene.clear();
+
+
       Data.commitGetHole({filename: val});
       //TODO: reload check boxes, three scene, and data
     }
@@ -58,13 +60,20 @@ export default class Toolbar extends Vue {
 
   @Watch('selectedSurvey', {immediate: true})
   onSurveyChanged(val: number, oldVal: number){
+    console.log("LOOK AT ME:", val, typeof(val))
     if((this.selectedSurvey != -1) && (this.selectedSurvey != Data.state.surveyGroups[0].priority) && (this.selectedSurvey != undefined)){
       let surveys = Data.state.surveyGroups;
       for(let i=0; i<surveys.length; i++){
-        surveys[i].isReference = false;
+        let surveyGroup = surveys[i];
+        surveyGroup.isReference = false;
+        Vue.set(Data.state.surveyGroups, i, surveyGroup);
       }
 
-      Data.state.surveyGroups.find(e => e.priority == val).isReference = true;
+      let surveyGroup = Data.state.surveyGroups.find(e => e.priority == val);
+      let index = Data.state.surveyGroups.indexOf(surveyGroup);
+      surveyGroup.isReference = true;
+      Vue.set(Data.state.surveyGroups, index, surveyGroup);
+      console.log(Data.state.surveyGroups.find(e => e.priority == val).isReference)
     }
   }
   
@@ -76,8 +85,22 @@ export default class Toolbar extends Vue {
     return Data.state.surveyGroups;
   }
 
+  get referenceSurveyGroup(): SurveyGroup {
+    console.log(Data.state.surveyGroups.find(e => e.isReference));
+    return Data.state.surveyGroups.find(e => e.isReference); 
+  }
+
   get hole(): Hole {
     return Data.state.hole;
+  }
+
+  get allowedDistance(): number {
+    return Data.state.allowedDistance;
+  }
+
+  set allowedDistance(n: number) {
+    Data.state.allowedDistance = n;
+    Data.commitResetRange();
   }
 }
 </script>

@@ -44,12 +44,6 @@ library.add(faCaretDown);
 export default class SurveyCard extends Vue {
   @Prop({type: Number}) card_id!: number;
 
-  @Watch("selected", {immediate: true})
-  onChildChanged(val: boolean, oldVal:boolean){
-    $("#threeSetup").load(window.location.href + " #threeSetup");
-    $("#threeSetup").load(" #threeSetup > *");
-  }
-
   get surveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id);
   }
