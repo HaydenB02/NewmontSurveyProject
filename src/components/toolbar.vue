@@ -12,11 +12,11 @@
       </b-form-select>
 
       <b-form-select id="priority-dropdown" v-model="selectedSurvey">
-        <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey" >{{survey.priority}}</b-form-select-option>
+        <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey.priority" >{{survey.priority}}</b-form-select-option>
       </b-form-select>
           
       <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true"></b-form-input>
-      <div v-if="hole != null"><h4> {{hole.depthUnits}}</h4></div>
+      <div v-if="hole != null"><h4>{{hole.depthUnits}}</h4></div>
     </b-form>
 
   </div>
@@ -29,6 +29,7 @@ import { Component, Watch } from "vue-property-decorator";
     
 //Data Stores
 import Data, { HoleName, SurveyGroup, Hole } from "../store/modules/data";
+import * as Three from 'three';
     
 @Component({
   components: {
@@ -36,44 +37,16 @@ import Data, { HoleName, SurveyGroup, Hole } from "../store/modules/data";
 })
 export default class Toolbar extends Vue {
   selectedHole = "";
-  selectedSurvey: number = -1;
 
   @Watch('selectedHole', {immediate: true})
   onHoleChanged(val: string, oldVal: string) {
     if(this.selectedHole != ""){
       //Load the json in selected
       Data.state.scene.clear();
-
+      Data.state.scene.add(new Three.AxesHelper(5));
 
       Data.commitGetHole({filename: val});
       //TODO: reload check boxes, three scene, and data
-    }
-  }
-
-  @Watch('surveyGroups', {immediate: true})
-  onGroupChanged(val: string, oldVal: string){
-    if(this.surveyGroups.length > 0){
-      //TODO: reload priority-dropdown div to show selectedSurvey
-      this.selectedSurvey = Data.state.surveyGroups[0].priority;
-    }
-  }
-
-  @Watch('selectedSurvey', {immediate: true})
-  onSurveyChanged(val: number, oldVal: number){
-    console.log("LOOK AT ME:", val, typeof(val))
-    if((this.selectedSurvey != -1) && (this.selectedSurvey != Data.state.surveyGroups[0].priority) && (this.selectedSurvey != undefined)){
-      let surveys = Data.state.surveyGroups;
-      for(let i=0; i<surveys.length; i++){
-        let surveyGroup = surveys[i];
-        surveyGroup.isReference = false;
-        Vue.set(Data.state.surveyGroups, i, surveyGroup);
-      }
-
-      let surveyGroup = Data.state.surveyGroups.find(e => e.priority == val);
-      let index = Data.state.surveyGroups.indexOf(surveyGroup);
-      surveyGroup.isReference = true;
-      Vue.set(Data.state.surveyGroups, index, surveyGroup);
-      console.log(Data.state.surveyGroups.find(e => e.priority == val).isReference)
     }
   }
   
@@ -86,7 +59,6 @@ export default class Toolbar extends Vue {
   }
 
   get referenceSurveyGroup(): SurveyGroup {
-    console.log(Data.state.surveyGroups.find(e => e.isReference));
     return Data.state.surveyGroups.find(e => e.isReference); 
   }
 
@@ -94,13 +66,41 @@ export default class Toolbar extends Vue {
     return Data.state.hole;
   }
 
+  get selectedSurvey(): number {
+    let survey = Data.state.surveyGroups.find(e => e.isReference)
+    if(survey){
+      return survey.priority;
+    }
+    return -1;
+  }
+
   get allowedDistance(): number {
     return Data.state.allowedDistance;
+  }
+
+  set selectedSurvey(n: number) {
+    if(n){
+      //remove old reference
+      let oldSurvey = Data.state.surveyGroups.find(e => e.isReference);
+      let oldIndex = Data.state.surveyGroups.indexOf(oldSurvey);
+      oldSurvey.isReference = false;
+      Vue.set(Data.state.surveyGroups, oldIndex, oldSurvey);
+
+      //set new reference
+      let survey = Data.state.surveyGroups.find(e => e.priority == n);
+      let index = Data.state.surveyGroups.indexOf(survey);
+      survey.isReference = true;
+      Vue.set(Data.state.surveyGroups, index, survey);
+
+      //reset inRange values for new priority
+      Data.commitResetRange();
+    }
   }
 
   set allowedDistance(n: number) {
     Data.state.allowedDistance = n;
     Data.commitResetRange();
+    console.log(Data.state.allowedDistance)
   }
 }
 </script>

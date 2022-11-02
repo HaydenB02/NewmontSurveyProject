@@ -1,7 +1,7 @@
 <template>
   <div id="threeSetup">
     <div v-if="!isLoading">
-    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="survey.holeId + survey.priority * 10000"/>
+    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="hole.holeRowId + survey.priority"/>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ import * as Three from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //Data Stores
-import Data, { SurveyGroup } from "../store/modules/data";
+import Data, { Hole, SurveyGroup } from "../store/modules/data";
 import App from "../store/modules/app";
 
 //UI Components
@@ -82,6 +82,10 @@ export default class ThreeSetup extends Vue {
 
   get referenceSurveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(e => e.isReference); 
+  }
+
+  get hole(): Hole {
+    return Data.state.hole;
   }
 
   get scene(): Three.Scene {

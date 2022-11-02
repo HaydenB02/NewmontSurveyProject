@@ -7,7 +7,7 @@
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
       <!--Checkboxes-->
       <div id="checkboxes">
-        <b-form-checkbox v-model="selected">{{selected}}</b-form-checkbox>
+        <b-form-checkbox v-model="selected"></b-form-checkbox>
       </div>
       <!--Dropdown Button-->
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
@@ -44,6 +44,10 @@ library.add(faCaretDown);
 export default class SurveyCard extends Vue {
   @Prop({type: Number}) card_id!: number;
 
+  get surveyGroups(): Array<SurveyGroup> {
+    return Data.state.surveyGroups;
+  }
+
   get surveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(i => i.priority === this.card_id);
   }
@@ -58,10 +62,6 @@ export default class SurveyCard extends Vue {
     newSurvey.isSelected = b;
     let index = Data.state.surveyGroups.indexOf(mySurvey);
     Vue.set(Data.state.surveyGroups, index, newSurvey);
-  }
-
-  get surveyGroups(): Array<SurveyGroup> {
-    return Data.state.surveyGroups;
   }
 }
 </script>

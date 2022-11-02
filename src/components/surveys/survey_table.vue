@@ -61,7 +61,7 @@
             depth: survey.depth,
             inclination: survey.inclination,
             aziTrueNth: survey.aziTrueNth,
-            _rowVariant: "danger",
+            _rowVariant: "danger"
           }
           }
           this.rows.push(row);

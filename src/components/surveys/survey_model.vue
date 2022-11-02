@@ -24,17 +24,16 @@ export default class SurveyModel extends Vue {
   ids: Array<number> = [];
 
   mounted(){
+    console.log(Data.state.hole.holeRowid + this.survey.priority)
     //check ref
     let camera = new Three.PerspectiveCamera();
     if(this.survey.isReference){
       let midID = Math.floor(this.survey.surveys.length / 2);
       let midPoint = this.survey.surveys[midID].point;
       camera.lookAt(midPoint.x, midPoint.z, midPoint.y);
-      console.log("isRef");
     }
     else{
       camera.lookAt(0, 0, 0);
-      console.log("notRef")
     }
 
     //add new controls
@@ -53,7 +52,6 @@ export default class SurveyModel extends Vue {
     dot.position.set(point.x, point.y, point.z);
     this.ids.push(dot.id);
     this.scene.add(dot);
-    console.log(point);
 
     //draw remaining dots and lines from previous dot to current dot
     for(let i=1; i<this.surveys.length; i++){
@@ -93,12 +91,10 @@ export default class SurveyModel extends Vue {
       this.ids.push(line.id);
       this.scene.add(line);
     }
-    console.log(this.ids);
   }
 
   destroyed() {
     //remove unselected surveys
-    console.log(this.ids);
     for(let i=0; i<this.ids.length; i++){
       this.scene.remove(this.scene.getObjectById(this.ids[i]));
     }
