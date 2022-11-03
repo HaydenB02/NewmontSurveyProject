@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component, Prop, Watch } from "vue-property-decorator";
+import { Component, Prop } from "vue-property-decorator";
     
 //Data Stores
 import Data, { SurveyGroup } from "../../store/modules/data";

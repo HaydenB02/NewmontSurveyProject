@@ -1,6 +1,6 @@
 <template>
   <div id="surveys">
-    <survey-card v-for="surveyGroup in surveyGroups" :key="surveyGroup.priority" :card_id="surveyGroup.priority" />
+    <survey-card v-for="surveyGroup in surveyGroups" :key="hole.holeRowid + surveyGroup.priority" :card_id="surveyGroup.priority" />
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
     
 //Data Stores
-import Data, { SurveyGroup } from "../store/modules/data";
+import Data, { Hole, SurveyGroup } from "../store/modules/data";
     
 //UI Components
 import SurveyCard from "./surveys/survey_card.vue";
@@ -22,6 +22,10 @@ import SurveyCard from "./surveys/survey_card.vue";
 export default class Surveys extends Vue {
   get surveyGroups(): Array<SurveyGroup> {
     return Data.state.surveyGroups;
+  }
+
+  get hole(): Hole {
+    return Data.state.hole;
   }
 }
 </script>

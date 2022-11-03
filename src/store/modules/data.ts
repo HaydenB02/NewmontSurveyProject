@@ -187,7 +187,7 @@ function calcPoints(survey: SurveyGroup) {
         let diffY = point.y - refSurvey.surveys[i].point.y;
         let diffZ = point.z - refSurvey.surveys[i].point.z;
 
-        let diff = Math.sqrt((diffX^2) + (diffY^2) + (diffZ^2));
+        let diff = Math.sqrt((diffX*diffX) + (diffY*diffY) + (diffZ*diffZ));
         if(diff <= Data.state.allowedDistance){
           point.inRange = true;
         }
@@ -219,6 +219,7 @@ function resetRange(state: DataState) {
       if(surveyGroup.isReference){
         //reference survey every point in range
         surveyGroup.surveys[j].point.inRange = true;
+        console.log("ref points")
       }
       else if(state.surveyGroups.find(e => e.isReference)){
         let refSurveyGroup = state.surveyGroups.find(e => e.isReference);
@@ -228,10 +229,10 @@ function resetRange(state: DataState) {
           let point = currSurvey.point;
           let refPoint = refSurvey.point;
           let diffX = point.x - refPoint.x;
-          let diffY = point.y - refSurvey.point.y;
-          let diffZ = point.z - refSurvey.point.z;
+          let diffY = point.y - refPoint.y;
+          let diffZ = point.z - refPoint.z;
   
-          let diff = Math.sqrt((diffX^2) + (diffY^2) + (diffZ^2));
+          let diff = Math.sqrt(diffX*diffX) + (diffY*diffY) + (diffZ*diffZ);
           if(diff <= state.allowedDistance){
             point.inRange = true;
           }
