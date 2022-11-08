@@ -219,7 +219,6 @@ function resetRange(state: DataState) {
       if(surveyGroup.isReference){
         //reference survey every point in range
         surveyGroup.surveys[j].point.inRange = true;
-        console.log("ref points")
       }
       else if(state.surveyGroups.find(e => e.isReference)){
         let refSurveyGroup = state.surveyGroups.find(e => e.isReference);
@@ -241,7 +240,7 @@ function resetRange(state: DataState) {
           }
         }
         else{
-          //TODO: should points past the furthest point of the reference be considered out of range?
+          //points past the furthest point of the reference are considered out of range
           currSurvey.point.inRange = false;
         }
       }

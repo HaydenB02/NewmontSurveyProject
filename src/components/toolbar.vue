@@ -41,12 +41,12 @@ export default class Toolbar extends Vue {
   @Watch('selectedHole', {immediate: true})
   onHoleChanged(val: string, oldVal: string) {
     if(this.selectedHole != ""){
-      //Load the json in selected
+      //reset the scene
       Data.state.scene.clear();
       Data.state.scene.add(new Three.AxesHelper(5));
 
+      //load the json in selected
       Data.commitGetHole({filename: val});
-      //TODO: reload check boxes, three scene, and data
     }
   }
   
@@ -99,8 +99,11 @@ export default class Toolbar extends Vue {
 
   set allowedDistance(n: number) {
     Data.state.allowedDistance = n;
+    //reset a survey so the scene updates
+    let resetSurvey = Data.state.surveyGroups.find(e => e.isReference);
+    let resetIndex = Data.state.surveyGroups.indexOf(resetSurvey);
+    Vue.set(Data.state.surveyGroups, resetIndex, resetSurvey);
     Data.commitResetRange();
-    console.log(Data.state.allowedDistance)
   }
 }
 </script>
