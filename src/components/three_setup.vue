@@ -14,6 +14,7 @@ import { Component} from "vue-property-decorator";
 //Three Imports
 import * as Three from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { DragControls } from 'three/examples/jsm/controls/DragControls';
 
 //Data Stores
 import Data, { Hole, SurveyGroup } from "../store/modules/data";
@@ -22,13 +23,16 @@ import App from "../store/modules/app";
 //UI Components
 import SurveyModel from "./surveys/survey_model.vue";
 
+
+
 @Component({
   components: {
     SurveyModel,
   }
 })
 export default class ThreeSetup extends Vue {
-  controls: OrbitControls = null;
+  orbitControls: OrbitControls = null;
+  dragControls: DragControls = null;
   container: HTMLElement = null;
 
   mounted() {
@@ -51,16 +55,22 @@ export default class ThreeSetup extends Vue {
       let midPoint = this.referenceSurveyGroup.surveys[midID].point;
       this.camera.lookAt(midPoint.x, midPoint.z, midPoint.y);
     }
-    else{
-      this.camera.lookAt(0, 0, 0);
-    }
   
     this.scene.background = new Three.Color('black');
     
-    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.controls.update();
-    this.renderer.render(this.scene, this.camera);
 
+    //Drag Controls
+    this.dragControls = new DragControls(this.moveables, this.camera, this.renderer.domElement);
+    this.dragControls.activate();
+
+    this.dragControls.addEventListener( 'dragstart', this.stopOrbit);
+    this.dragControls.addEventListener( 'dragend', this.startOrbit);
+
+    //Orbit Controls
+    this.orbitControls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.orbitControls.update();
+    this.renderer.render(this.scene, this.camera);
+    
     this.animate();
   }
 
@@ -76,12 +86,25 @@ export default class ThreeSetup extends Vue {
     this.renderer.render( this.scene, this.camera );
   }
 
+  stopOrbit() {
+    this.orbitControls.enabled = false;
+  }
+
+  startOrbit() {
+    this.orbitControls.enabled = true;
+    //update lines
+  }
+
   get selectedSurveyGroups(): Array< SurveyGroup > {
     return Data.state.surveyGroups.filter(e => e.isSelected);
   }
 
   get referenceSurveyGroup(): SurveyGroup {
     return Data.state.surveyGroups.find(e => e.isReference); 
+  }
+
+  get moveables(): Array<Three.Mesh> {
+    return Data.state.moveables;
   }
 
   get hole(): Hole {

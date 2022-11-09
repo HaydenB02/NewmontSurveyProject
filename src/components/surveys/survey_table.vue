@@ -1,10 +1,13 @@
 <template>
-    <vue-good-table
-    :columns = "columns"
-    :rows = "rows"
+  <vue-good-table
+  :columns = "columns"
+  :rows = "surveyGroup.surveys"
+  max-height="20em"
+  >
+    <!-- make table editable -->
+
     
-    max-height="20em"
-    />
+  </vue-good-table>
 
 </template>
 

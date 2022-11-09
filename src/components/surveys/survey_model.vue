@@ -24,7 +24,6 @@ export default class SurveyModel extends Vue {
   ids: Array<number> = [];
 
   mounted(){
-    console.log(Data.state.hole.holeRowid + this.survey.priority)
     //check ref
     let camera = new Three.PerspectiveCamera();
     if(this.survey.isReference){
@@ -32,13 +31,10 @@ export default class SurveyModel extends Vue {
       let midPoint = this.survey.surveys[midID].point;
       camera.lookAt(midPoint.x, midPoint.z, midPoint.y);
     }
-    else{
-      camera.lookAt(0, 0, 0);
-    }
 
     //add new controls
-    let controls = new OrbitControls(camera, this.renderer.domElement);
-    controls.update();
+    let orbitControls = new OrbitControls(camera, this.renderer.domElement);
+    orbitControls.update();
     this.renderer.render(this.scene, camera);
 
     //create drawing material
@@ -53,6 +49,8 @@ export default class SurveyModel extends Vue {
     this.ids.push(dot.id);
     this.scene.add(dot);
 
+    //collect dot objects for drag controls
+    this.moveables.push(dot);
     //draw remaining dots and lines from previous dot to current dot
     for(let i=1; i<this.surveys.length; i++){
       //draw next dot
@@ -69,6 +67,7 @@ export default class SurveyModel extends Vue {
 
       loopDot.position.set(point.x, point.z, point.y);
       this.scene.add(loopDot);
+      this.moveables.push(loopDot);
         
       //draw line from previous dot to this dot
       let lastPoint = this.surveys[i-1].point;
@@ -110,6 +109,10 @@ export default class SurveyModel extends Vue {
 
   get selectedSurveyGroups(): Array< SurveyGroup > {
     return Data.state.surveyGroups.filter(e => e.isSelected);
+  }
+
+  get moveables(): Array<Three.Mesh> {
+    return Data.state.moveables;
   }
     
 }

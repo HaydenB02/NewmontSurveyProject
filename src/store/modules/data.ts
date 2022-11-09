@@ -71,7 +71,8 @@ export interface DataState {
    holes: Array<Hole>,
    scene: Three.Scene,
    camera: Three.PerspectiveCamera,
-   renderer: Three.Renderer;
+   renderer: Three.Renderer,
+   moveables: Array<Three.Mesh>,
 }
 
 const initialState: DataState = {
@@ -84,7 +85,8 @@ const initialState: DataState = {
   holes: [],
   scene: null,
   camera: null,
-  renderer: null
+  renderer: null,
+  moveables: [],
 };
 
 async function getHoleNames(state: DataState) {
