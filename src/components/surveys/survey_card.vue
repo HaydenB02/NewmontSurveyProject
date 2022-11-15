@@ -5,13 +5,16 @@
       <!--Labels-->
       <h6 id="priority">Priority: {{surveyGroup.priority}}</h6>
       <h6 id="type">Survey Type: {{surveyGroup.surveyType}}</h6>
+
       <!--Checkboxes-->
       <div id="checkboxes">
         <b-form-checkbox v-model="selected"></b-form-checkbox>
       </div>
+
       <!--Dropdown Button-->
       <b-button v-b-toggle="'collapse-' + surveyGroup.priority" id="dropdown"><icon icon="caret-down"></icon></b-button>
     </b-form>
+
     <!--Survey Tables-->
     <b-collapse :id="'collapse-' + surveyGroup.priority">
       <div id="table-position"><survey-table :table_id="surveyGroup.priority" /></div>
@@ -19,7 +22,10 @@
   </b-card>
 </template>
 
+
+
 <script lang="ts">
+//Vue Imports
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
     
@@ -29,12 +35,12 @@ import Data, { SurveyGroup } from "../../store/modules/data";
 //UI Components
 import SurveyTable from "./survey_table.vue";
     
-//Icons
+//Dropdown Icon
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
 library.add(faCaretDown);
-    
+
 @Component({
   components: {     
     SurveyTable,   
@@ -65,10 +71,8 @@ export default class SurveyCard extends Vue {
   }
 }
 </script>
-    
-<!-- Global Style -->
-<style>
-</style>
+  
+
     
 <!-- Local Style -->
 <style scoped> 

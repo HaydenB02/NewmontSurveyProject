@@ -1,9 +1,14 @@
+//Vue Imports
 import Vue from "vue";
-import { RootState } from "../../store";
 import { getStoreBuilder } from "vuex-typex";
+
+//Data Stores
+import { RootState } from "../../store";
 import App, { AppState } from "./app";
-import Fuse from 'fuse.js';
+
+//Three Imports
 import * as Three from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export interface HoleName {
     holeRowId: number,
@@ -53,12 +58,22 @@ export interface Survey {
     point: Point,
 }
 
+//Interface used for drawing and comparing
 export interface Point {
   depth: number,
   x: number,
   y: number,
   z: number,
   inRange: boolean,
+}
+
+//Interface used to store necessary components for controling 3D model across classes
+export interface ThreeContainer {
+  scene: Three.Scene,
+  camera: Three.PerspectiveCamera,
+  renderer: Three.Renderer,
+  moveables: Array<Three.Mesh>,
+  orbitControls: OrbitControls
 }
 
 export interface DataState {
@@ -69,10 +84,7 @@ export interface DataState {
    surveyGroup: SurveyGroup,
    search_results: Array<HoleName>,
    holes: Array<Hole>,
-   scene: Three.Scene,
-   camera: Three.PerspectiveCamera,
-   renderer: Three.Renderer,
-   moveables: Array<Three.Mesh>,
+   threeContainer: ThreeContainer,
 }
 
 const initialState: DataState = {
@@ -83,10 +95,7 @@ const initialState: DataState = {
   surveyGroup: null,
   search_results: [],
   holes: [],
-  scene: null,
-  camera: null,
-  renderer: null,
-  moveables: [],
+  threeContainer: null,
 };
 
 async function getHoleNames(state: DataState) {
@@ -114,15 +123,17 @@ async function fetchHole(filename: string): Promise<Hole> {
 }
 
 async function updateSurveyGroups(state: DataState) {
-  state.hole.surveyGroups.sort((a, b) => a.priority - b.priority);
-  state.hole.surveyGroups.reverse();
+  //Make sure surveys are in descending order
+  state.hole.surveyGroups.sort((a, b) => b.priority - a.priority);
   state.surveyGroups = state.hole.surveyGroups;
 
-  //set initial reference to first
+  //Set initial reference to highest priority
   let surveyGroup = state.surveyGroups[0];
   surveyGroup.isReference = true;
   surveyGroup.isSelected = true;
   Vue.set(state.surveyGroups, 0, surveyGroup);
+
+  //Set every other survey to not reference to make sure it isn't read as null
   for(let i=1; i<state.surveyGroups.length; i++){
     surveyGroup = state.surveyGroups[i];
     surveyGroup.isReference = false;
@@ -130,24 +141,23 @@ async function updateSurveyGroups(state: DataState) {
     Vue.set(state.surveyGroups, i, surveyGroup);
   }
 
-  //load points
-  if(state.surveyGroups.find(e => e.isReference) != undefined){
-    let refSurvey = state.surveyGroups.find(e => e.isReference);
-    calcPoints(refSurvey);
+  //Calculate points for reference survey to allow comparison
+  let refSurvey = state.surveyGroups[0];
+  calcPoints(refSurvey);
 
-    //TODO: get camera to correct location and look at lines
-
-    let midID = Math.floor(refSurvey.surveys.length / 2);
-    state.camera.position.set(refSurvey.surveys[midID].point.x + 15, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
-    state.camera.lookAt(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
-  }
+  //Focus camera on middle point of the reference survey
+  let midID = Math.floor(refSurvey.surveys.length / 2);
+  state.threeContainer.camera.position.set(refSurvey.surveys[midID].point.x + 15, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
+  state.threeContainer.camera.lookAt(refSurvey.surveys[midID].point.x, refSurvey.surveys[midID].point.z, refSurvey.surveys[midID].point.y);
   
+  //Calculate points for all surveys
   for(let i=0; i<state.surveyGroups.length; i++){
     calcPoints(state.surveyGroups[i]);
   }
 }
 
 function calcPoints(survey: SurveyGroup) {
+  //Create temporary point variable
   let point: any = {
     x: null,
     y: null,
@@ -156,38 +166,42 @@ function calcPoints(survey: SurveyGroup) {
     inRange: null
   }
 
+  //Create first point, always the same, always in range
   point.x = 0;
   point.y = 0;
   point.z = 0;
   point.depth = survey.surveys[0].depth;
   point.inRange = true;
-
   survey.surveys[0].point = JSON.parse(JSON.stringify(point));
+
+  //Find every other point
   for(let i=1; i<survey.surveys.length; i++){
     let lastSurvey = survey.surveys[i-1];
     let diffDepth = survey.surveys[i].depth - lastSurvey.depth;
     let aziRads = lastSurvey.aziTrueNth * Math.PI / 180;
     let inclineRads = lastSurvey.inclination * Math.PI / 180;
-
     let lastPoint = lastSurvey.point;
 
+    //Calculate new points position
     point.x = lastPoint.x + (diffDepth * Math.sin(aziRads));
     point.y = lastPoint.y + (diffDepth * Math.cos(aziRads));
     point.z = lastPoint.z + (diffDepth * Math.sin(inclineRads));
     point.depth = survey.surveys[i].depth;
 
-    //check in range
+    //Check in range
     if(survey.isReference){
-      //reference survey every point in range
+      //Reference survey every point in range
       point.inRange = true;
     }
     else if(Data.state.surveyGroups.find(e => e.isReference) != undefined){
       let refSurvey = Data.state.surveyGroups.find(e => e.isReference);
 
-      if(refSurvey.surveys.length > i){
-        let diffX = point.x - refSurvey.surveys[i].point.x;
-        let diffY = point.y - refSurvey.surveys[i].point.y;
-        let diffZ = point.z - refSurvey.surveys[i].point.z;
+      //If the reference survey has a comparable depth, check difference
+      if(refSurvey.surveys.find(e => e.depth == point.depth)){
+        let refPoint = refSurvey.surveys.find(e => e.depth == point.depth).point;
+        let diffX = point.x - refPoint.x;
+        let diffY = point.y - refPoint.y;
+        let diffZ = point.z - refPoint.z;
 
         let diff = Math.sqrt((diffX*diffX) + (diffY*diffY) + (diffZ*diffZ));
         if(diff <= Data.state.allowedDistance){
@@ -197,8 +211,8 @@ function calcPoints(survey: SurveyGroup) {
           point.inRange = false;
         }
       }
+      //Otherwise, all points that dont have a comparable depth are considered out of range
       else{
-        //TODO: should points past the furthest point of the reference be considered out of range?
         point.inRange = false;
       }
     }
@@ -208,27 +222,30 @@ function calcPoints(survey: SurveyGroup) {
       point.inRange = true;
     }
 
+    //Set current point to calculated point variable
     survey.surveys[i].point = JSON.parse(JSON.stringify(point));
   }
 }
 
 function resetRange(state: DataState) {
+  //Loop through each surveyGroup and reset inRange variable for each point
   for(let i=0; i<state.surveyGroups.length; i++){
     let surveyGroup = state.surveyGroups[i];
 
     for(let j=0; j<surveyGroup.surveys.length; j++){
       let currSurvey = surveyGroup.surveys[j];
+
+      //Reference survey every point in range
       if(surveyGroup.isReference){
-        //reference survey every point in range
         surveyGroup.surveys[j].point.inRange = true;
       }
       else if(state.surveyGroups.find(e => e.isReference)){
         let refSurveyGroup = state.surveyGroups.find(e => e.isReference);
-        let refSurvey = refSurveyGroup.surveys[j];
   
-        if(refSurveyGroup.surveys.length > j){
+        //If the reference survey has a comparable depth, check difference
+        if(refSurveyGroup.surveys.find(e => e.depth == currSurvey.depth)){
           let point = currSurvey.point;
-          let refPoint = refSurvey.point;
+          let refPoint = refSurveyGroup.surveys.find(e => e.depth == currSurvey.depth).point;
           let diffX = point.x - refPoint.x;
           let diffY = point.y - refPoint.y;
           let diffZ = point.z - refPoint.z;
@@ -241,8 +258,8 @@ function resetRange(state: DataState) {
             point.inRange = false;
           }
         }
+        //Otherwise, all points without a comparable depth are out of range
         else{
-          //points past the furthest point of the reference are considered out of range
           currSurvey.point.inRange = false;
         }
       }

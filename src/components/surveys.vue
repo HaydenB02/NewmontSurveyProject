@@ -1,10 +1,14 @@
 <template>
+  <!-- Display Survey Data Cards -->
   <div id="surveys">
     <survey-card v-for="surveyGroup in surveyGroups" :key="hole.holeRowid + surveyGroup.priority" :card_id="surveyGroup.priority" />
   </div>
 </template>
 
+
+
 <script lang="ts">
+//Vue Imports
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
     
@@ -29,10 +33,6 @@ export default class Surveys extends Vue {
   }
 }
 </script>
-
-<!-- Global Style -->
-<style>
-</style>
 
 <!-- Local Style -->
 <style scoped>

@@ -1,20 +1,26 @@
 <template>
   <div id="toolbar">
 
+    <!-- Titles -->
     <b-form inline>
       <p id="hole-title">Hole Selector:</p>
       <p id="priority-title">Priority Selector:</p>
       <p id="distance-title">Allowable Distance:</p>
     </b-form>
+
+    <!-- Inputs -->
     <b-form inline>
+      <!-- Hole Selector -->
       <b-form-select id="hole-dropdown" v-model="selectedHole">
         <b-form-select-option v-for="hole in holeNames" :key="hole.holeRowId" :value="hole.filename">{{hole.holeId}}</b-form-select-option>
       </b-form-select>
-
+      
+      <!-- Priority Survey Selector -->
       <b-form-select id="priority-dropdown" v-model="selectedSurvey">
         <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey.priority" >{{survey.priority}}</b-form-select-option>
       </b-form-select>
-          
+      
+      <!-- Allowed Distance Textbox -->
       <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true"></b-form-input>
       <div v-if="hole != null"><h4>{{hole.depthUnits}}</h4></div>
     </b-form>
@@ -23,12 +29,16 @@
 </template>
 
 
+
 <script lang="ts">
+//Vue Imports
 import Vue from "vue";
 import { Component, Watch } from "vue-property-decorator";
     
 //Data Stores
-import Data, { HoleName, SurveyGroup, Hole } from "../store/modules/data";
+import Data, { HoleName, SurveyGroup, Hole, ThreeContainer } from "../store/modules/data";
+
+//Three Imports
 import * as Three from 'three';
     
 @Component({
@@ -42,8 +52,8 @@ export default class Toolbar extends Vue {
   onHoleChanged(val: string, oldVal: string) {
     if(this.selectedHole != ""){
       //reset the scene
-      Data.state.scene.clear();
-      Data.state.scene.add(new Three.AxesHelper(5));
+      this.threeContainer.scene.clear();
+      this.threeContainer.scene.add(new Three.AxesHelper(5));
 
       //load the json in selected
       Data.commitGetHole({filename: val});
@@ -78,28 +88,32 @@ export default class Toolbar extends Vue {
     return Data.state.allowedDistance;
   }
 
+  get threeContainer(): ThreeContainer {
+    return Data.state.threeContainer;
+  }
+
   set selectedSurvey(n: number) {
     if(n){
-      //remove old reference
+      //Remove old reference
       let oldSurvey = Data.state.surveyGroups.find(e => e.isReference);
       let oldIndex = Data.state.surveyGroups.indexOf(oldSurvey);
       oldSurvey.isReference = false;
       Vue.set(Data.state.surveyGroups, oldIndex, oldSurvey);
 
-      //set new reference
+      //Set new reference
       let survey = Data.state.surveyGroups.find(e => e.priority == n);
       let index = Data.state.surveyGroups.indexOf(survey);
       survey.isReference = true;
       Vue.set(Data.state.surveyGroups, index, survey);
 
-      //reset inRange values for new priority
+      //Reset inRange values for new priority
       Data.commitResetRange();
     }
   }
 
   set allowedDistance(n: number) {
     Data.state.allowedDistance = n;
-    //reset a survey so the scene updates
+    //Reset a survey so the scene updates
     let resetSurvey = Data.state.surveyGroups.find(e => e.isReference);
     let resetIndex = Data.state.surveyGroups.indexOf(resetSurvey);
     Vue.set(Data.state.surveyGroups, resetIndex, resetSurvey);
@@ -108,13 +122,8 @@ export default class Toolbar extends Vue {
 }
 </script>
 
-<!-- Global Style -->
-<style>
-</style>
-
 <!-- Local Style -->
 <style scoped>
-
   #toolbar {
     width: 100%;
     height: 10%;
@@ -144,5 +153,4 @@ export default class Toolbar extends Vue {
   #distance-title {
     width: 25%;
   }
-
 </style>

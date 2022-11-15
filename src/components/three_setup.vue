@@ -1,4 +1,5 @@
 <template>
+  <!-- Display Survey Models -->
   <div id="threeSetup">
     <div v-if="!isLoading">
     <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="hole.holeRowId + survey.priority"/>
@@ -6,8 +7,11 @@
   </div>
 </template>
 
+
+
 <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 <script lang="ts">
+//Vue Imports
 import Vue from 'vue';
 import { Component} from "vue-property-decorator";
 
@@ -17,13 +21,11 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { DragControls } from 'three/examples/jsm/controls/DragControls';
 
 //Data Stores
-import Data, { Hole, SurveyGroup } from "../store/modules/data";
+import Data, { Hole, Survey, SurveyGroup, ThreeContainer } from "../store/modules/data";
 import App from "../store/modules/app";
 
 //UI Components
 import SurveyModel from "./surveys/survey_model.vue";
-
-
 
 @Component({
   components: {
@@ -31,71 +33,107 @@ import SurveyModel from "./surveys/survey_model.vue";
   }
 })
 export default class ThreeSetup extends Vue {
-  orbitControls: OrbitControls = null;
   dragControls: DragControls = null;
   container: HTMLElement = null;
 
   mounted() {
+    //Set up three container
+    let threeContainer: any = {
+      scene: null,
+      camera: null,
+      renderer: null,
+      moveables: new Array<Three.Mesh>(),
+      orbitControls: null,
+    }
+    
+    //Find allowed size
     this.container = document.getElementById('threeSetup');
     window.addEventListener('resize', this.onWindowResize, false);
 
-    this.renderer = new Three.WebGLRenderer({antialias: true});
-    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
-    this.container.appendChild(this.renderer.domElement);
+    //Setup renderer
+    threeContainer.renderer = new Three.WebGLRenderer({antialias: true});
+    threeContainer.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+    this.container.appendChild(threeContainer.renderer.domElement);
 
-    this.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
-    this.scene = new Three.Scene();
-    this.scene.add(new Three.AxesHelper(5));
+    //Setup camera and scene
+    threeContainer.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
+    threeContainer.scene = new Three.Scene();
+    threeContainer.scene.add(new Three.AxesHelper(5));
 
-    this.camera.position.x = 10;
-    this.camera.position.y = 10;
-    this.camera.position.z = 10;
-    if(this.referenceSurveyGroup != undefined){
-      let midID = Math.floor(this.referenceSurveyGroup.surveys.length / 2);
-      let midPoint = this.referenceSurveyGroup.surveys[midID].point;
-      this.camera.lookAt(midPoint.x, midPoint.z, midPoint.y);
-    }
-  
-    this.scene.background = new Three.Color('black');
     
-
+    /*
     //Drag Controls
-    this.dragControls = new DragControls(this.moveables, this.camera, this.renderer.domElement);
+    //Incomplete, delete lines 62 and 98 to enable
+    //Dragging dots works, but does not save their position or recalculate the lines
+    //Adding a survey disables the movement on all other surveys, unless that dot had been moved before
+
+    this.dragControls = new DragControls(threeContainer.moveables, threeContainer.camera, threeContainer.renderer.domElement);
     this.dragControls.activate();
 
+    //When dragging, stop orbit controls and find the original point
+    let oldPoint: any = {
+      x: 0,
+      y: 0,
+      z: 0,
+    }
     this.dragControls.addEventListener( 'dragstart', this.stopOrbit);
+    this.dragControls.addEventListener( 'dragstart', function(event) {
+      oldPoint.x = event.object.position.x;
+      oldPoint.y = event.object.position.y;
+      oldPoint.z = event.object.position.z;
+    });
+    
+    //When done dragging, resume orbit controls and find new point
+    let newPoint: any = {
+      x: 0,
+      y: 0,
+      z: 0,
+    }
     this.dragControls.addEventListener( 'dragend', this.startOrbit);
+    this.dragControls.addEventListener( 'dragend', function(event) {
+      newPoint.x = event.object.position.x;
+      newPoint.y = event.object.position.y;
+      newPoint.z = event.object.position.z;
+    });
+    */
 
     //Orbit Controls
-    this.orbitControls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.orbitControls.update();
-    this.renderer.render(this.scene, this.camera);
-    
+    threeContainer.orbitControls = new OrbitControls(threeContainer.camera, threeContainer.renderer.domElement);
+    threeContainer.renderer.render(threeContainer.scene, threeContainer.camera);
+  
+    //Finalize threeContainer
+    threeContainer.scene.background = new Three.Color('black');
+    this.threeContainer = threeContainer;
+
+    //Animate the scene
     this.animate();
   }
 
   onWindowResize() {
-    this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
-    this.camera.updateProjectionMatrix();
-    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
-    this.renderer.render(this.scene, this.camera);
+    this.threeContainer.camera.aspect = this.container.clientWidth / this.container.clientHeight;
+    this.threeContainer.camera.updateProjectionMatrix();
+    this.threeContainer.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+    this.threeContainer.renderer.render(this.threeContainer.scene, this.threeContainer.camera);
   }
 
   animate() {
     requestAnimationFrame( this.animate );
-    this.renderer.render( this.scene, this.camera );
+    this.threeContainer.renderer.render( this.threeContainer.scene, this.threeContainer.camera );
   }
 
   stopOrbit() {
-    this.orbitControls.enabled = false;
+    this.threeContainer.orbitControls.enabled = false;
   }
 
   startOrbit() {
-    this.orbitControls.enabled = true;
-    //update lines
+    this.threeContainer.orbitControls.enabled = true;
   }
 
-  get selectedSurveyGroups(): Array< SurveyGroup > {
+  get surveyGroups(): Array<SurveyGroup> {
+    return Data.state.surveyGroups;
+  }
+
+  get selectedSurveyGroups(): Array<SurveyGroup> {
     return Data.state.surveyGroups.filter(e => e.isSelected);
   }
 
@@ -103,48 +141,23 @@ export default class ThreeSetup extends Vue {
     return Data.state.surveyGroups.find(e => e.isReference); 
   }
 
-  get moveables(): Array<Three.Mesh> {
-    return Data.state.moveables;
-  }
-
   get hole(): Hole {
     return Data.state.hole;
   }
 
-  get scene(): Three.Scene {
-    return Data.state.scene;
-  }
-
-  get camera(): Three.PerspectiveCamera {
-    return Data.state.camera;
-  }
-
-  get renderer(): Three.Renderer {
-    return Data.state.renderer;
-  }
-
-  set scene(s: Three.Scene) {
-    Data.state.scene = s;
-  }
-
-  set camera(c: Three.PerspectiveCamera) {
-    Data.state.camera = c;
-  }
-
-  set renderer(r: Three.Renderer) {
-    Data.state.renderer = r;
+  get threeContainer(): ThreeContainer {
+    return Data.state.threeContainer;
   }
 
   get isLoading(): boolean {
     return App.state.isLoading;
   }
+
+  set threeContainer(c: ThreeContainer) {
+    Data.state.threeContainer = c;
+  }
 }
-
 </script>
-
-<!-- Global Style -->
-<style>
-</style>
 
 <!-- Local Style -->
 <style scoped>

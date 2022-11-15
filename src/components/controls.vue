@@ -1,7 +1,8 @@
 <template>
   <div id="controls">
       <b-card id="data-card" class="text-center">
-  
+
+        <!-- Display dropdowns and survey info -->
         <toolbar />
         <surveys />
 
@@ -9,7 +10,10 @@
   </div>
 </template>
 
+
+
 <script lang="ts">
+//Vue Imports
 import Vue from "vue";
 import { Component} from "vue-property-decorator";
 
@@ -19,8 +23,6 @@ import Data, { HoleName, SurveyGroup } from "../store/modules/data";
 //UI Components
 import Toolbar from "./toolbar.vue";
 import Surveys from "./surveys.vue";
-
-
 
 @Component({
   components: {
@@ -38,10 +40,6 @@ export default class Controls extends Vue {
   }
 }
 </script>
-
-<!-- Global Style -->
-<style>
-</style>
 
 <!-- Local Style -->
 <style scoped>
