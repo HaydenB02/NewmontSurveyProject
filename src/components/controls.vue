@@ -47,7 +47,7 @@ export default class Controls extends Vue {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: white;
     overflow-y: auto;
