@@ -79,6 +79,9 @@ export default class SurveyCard extends Vue {
   #surveyCard {
     cursor: pointer;
     margin-bottom: 1em;
+    background-color: gray;
+    color: black;
+    opacity: 75%;
   }
 
   #priority {
@@ -98,6 +101,8 @@ export default class SurveyCard extends Vue {
     position: absolute;
     right: 0em;
     margin: 1em;
+    background-color: teal;
+    color: black;
   }
 
   #table-position{

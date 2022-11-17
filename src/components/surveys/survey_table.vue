@@ -3,6 +3,7 @@
   :columns = "columns"
   :rows = "surveyGroup.surveys"
   max-height="20em"
+  theme="nocturnal"
   >
   
   <template slot="table-row" slot-scope="props">
@@ -121,11 +122,13 @@
     width: 5em;
     border-style: hidden;
     text-align: right;
+    
   }
 
   #valid {
     width: 5em;
     border-style: hidden;
     text-align: right;
+    
   }
 </style>

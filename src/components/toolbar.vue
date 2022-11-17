@@ -22,7 +22,7 @@
       
       <!-- Allowed Distance Textbox -->
       <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true"></b-form-input>
-      <div v-if="hole != null"><h4>{{hole.depthUnits}}</h4></div>
+      <div v-if="hole != null"><h4 style="color: teal;">{{hole.depthUnits}}</h4></div>
     </b-form>
 
   </div>
@@ -128,29 +128,45 @@ export default class Toolbar extends Vue {
     width: 100%;
     height: 10%;
     margin-bottom: 1em;
+    background-color: black;
   }
 
   #hole-dropdown {
     width: 40%;
+    background-color: gray;
+    color: black;
+    border-color: teal;
   }
 
   #priority-dropdown {
     width: 20%;
+    background-color: gray;
+    color: black;
+    border-color: teal;
   }
 
   #difference-input {
     width: 20%;
+    background-color: gray;
+    color: black;
+    border-color: teal;
   }
 
   #hole-title {
     width: 40%;
+    color: teal;
+    text-align: left;
   }
 
   #priority-title {
     width: 20%;
+    color: teal;
+    text-align: left;
   }
 
   #distance-title {
     width: 25%;
+    color: teal;
+    text-align: left;
   }
 </style>
