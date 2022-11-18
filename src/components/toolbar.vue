@@ -17,11 +17,11 @@
       
       <!-- Priority Survey Selector -->
       <b-form-select id="priority-dropdown" v-model="selectedSurvey">
-        <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey.priority" >{{survey.priority}}</b-form-select-option>
+        <b-form-select-option v-for="survey in surveyGroups" :key="survey.priority" :value="survey.priority">{{survey.priority}}</b-form-select-option>
       </b-form-select>
       
       <!-- Allowed Distance Textbox -->
-      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true"></b-form-input>
+      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true" ></b-form-input>
       <div v-if="hole != null"><h4 style="color: teal;">{{hole.depthUnits}}</h4></div>
     </b-form>
 
@@ -132,34 +132,38 @@ export default class Toolbar extends Vue {
   }
 
   #hole-dropdown {
-    width: 40%;
+    width: 29%;
+    margin-right: 1%;
     background-color: gray;
     color: black;
     border-color: teal;
   }
 
   #priority-dropdown {
-    width: 20%;
+    width: 24%;
+    margin-right: 1%;
     background-color: gray;
     color: black;
     border-color: teal;
   }
 
   #difference-input {
-    width: 20%;
+    width: 24%;
+    margin-right: 1%;
     background-color: gray;
     color: black;
     border-color: teal;
+    cursor: default;
   }
 
   #hole-title {
-    width: 40%;
+    width: 30%;
     color: teal;
     text-align: left;
   }
 
   #priority-title {
-    width: 20%;
+    width: 25%;
     color: teal;
     text-align: left;
   }
