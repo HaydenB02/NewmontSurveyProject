@@ -40,6 +40,7 @@ import Data, { HoleName, SurveyGroup, Hole, ThreeContainer } from "../store/modu
 
 //Three Imports
 import * as Three from 'three';
+import SurveyModel from "./surveys/survey_model.vue";
     
 @Component({
   components: {
@@ -54,6 +55,7 @@ export default class Toolbar extends Vue {
       //reset the scene
       this.threeContainer.scene.clear();
       this.threeContainer.scene.add(new Three.AxesHelper(5));
+      SurveyModel.focused = false;
 
       //load the json in selected
       Data.commitGetHole({filename: val});

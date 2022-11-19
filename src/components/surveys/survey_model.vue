@@ -19,16 +19,35 @@ import Data, { Survey, SurveyGroup, ThreeContainer } from "../../store/modules/d
 export default class SurveyModel extends Vue {
   @Prop() survey!: SurveyGroup;
 
+  static focused: boolean = false;
   surveys: Array<Survey> = this.survey.surveys;
   ids: Array<number> = [];  //used to delete previous models
 
   mounted(){
-    //If this is the reference survey, focus controls on the middle point of this survey
-    if(this.survey.isReference){
+    //Focus controls and camera on the first reference survey
+    if(this.survey.isReference && !SurveyModel.focused){
+      SurveyModel.focused = true;
+
+      //Set controls around middle point in this survey
       let midID = Math.floor(this.survey.surveys.length / 2);
       let midPoint = this.survey.surveys[midID].point;
       let midVector = new Three.Vector3(midPoint.x, midPoint.z, midPoint.y);
       this.threeContainer.orbitControls.target = midVector;
+
+      //Set the camera to look at the middle point of this survey but move in the opposite direction of survey for easy viewing
+      let firstPoint = this.survey.surveys[0].point;
+      let distX = Math.abs(midPoint.x - firstPoint.x);
+      let distY = Math.abs(midPoint.y - firstPoint.y);
+      this.threeContainer.camera.position.y = midPoint.z;
+      if(Math.max(distX, distY) == distX) {
+        this.threeContainer.camera.position.z = midPoint.y + this.survey.surveys.length*4;
+        this.threeContainer.camera.position.x = midPoint.x;
+      }
+      else {
+        this.threeContainer.camera.position.x = midPoint.x + this.survey.surveys.length*4;
+        this.threeContainer.camera.position.z = midPoint.y;
+      }
+      this.threeContainer.camera.lookAt(midVector);
     }
 
     //Create drawing material

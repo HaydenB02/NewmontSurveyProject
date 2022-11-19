@@ -2,7 +2,7 @@
   <!-- Display Survey Models -->
   <div id="threeSetup">
     <div v-if="!isLoading">
-    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="hole.holeRowId + survey.priority"/>
+    <survey-model v-for="survey in selectedSurveyGroups" :survey="survey" :key="hole.holeRowId + survey.priority" />
     </div>
   </div>
 </template>
@@ -56,7 +56,7 @@ export default class ThreeSetup extends Vue {
     this.container.appendChild(threeContainer.renderer.domElement);
 
     //Setup camera and scene
-    threeContainer.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight, 1, 10000);
+    threeContainer.camera = new Three.PerspectiveCamera(70, this.container.clientWidth/this.container.clientHeight);
     threeContainer.scene = new Three.Scene();
     threeContainer.scene.add(new Three.AxesHelper(5));
 
@@ -99,6 +99,8 @@ export default class ThreeSetup extends Vue {
 
     //Orbit Controls
     threeContainer.orbitControls = new OrbitControls(threeContainer.camera, threeContainer.renderer.domElement);
+    threeContainer.orbitControls.enableDamping = true;
+    threeContainer.orbitControls.dampingfactor = 0.25;
     threeContainer.renderer.render(threeContainer.scene, threeContainer.camera);
   
     //Finalize threeContainer

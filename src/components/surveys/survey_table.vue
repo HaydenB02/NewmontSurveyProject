@@ -64,16 +64,17 @@
     }
 
     //Consistently update inRange highlights
-    @Watch("allowedDistance", {immediate: true})
-    @Watch("referenceSurvey", {immediate: true})
-    onErrorChanged(val: any, oldVal: any) {
-      if(document.getElementById("error-checker")){
-        //TODO: reload error checker to update which cells should be red
-      }
-    }
+    // @Watch("allowedDistance", {immediate: true})
+    // @Watch("referenceSurvey", {immediate: true})
+    // onErrorChanged(val: any, oldVal: any) {
+    //   console.log('AYO')
+    //   if(document.getElementById("error-checker")){
+    //     let surveyGroup = this.surveyGroup;
+    //     let index = Data.state.surveyGroups.indexOf(this.surveyGroup);
+    //     Vue.set(Data.state.surveyGroups, index, surveyGroup);
+    //   }
+    // }
 
-
-    //TODO: get the following 3 functions to update the scene.
     updateDepth(prop: any) {
       let survey = this.surveyGroup.surveys[prop.index];
       survey.depth = parseFloat(prop.row.depth);
