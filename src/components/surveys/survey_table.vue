@@ -10,7 +10,7 @@
     <!-- Check inRange -->
     <span id="error-checker">
       <!-- If not in range, make inputs bold and red -->
-      <span v-if="isError(props.row)">
+      <span v-if="!props.row.point.inRange">
         <span v-if="props.column.field == 'depth'">
           <span><b-form-input v-model="props.row.depth" id="error" @blur="updateDepth(props)"  /></span>
         </span>
@@ -175,7 +175,6 @@
     get referenceSurvey(): SurveyGroup {
       return Data.state.surveyGroups.find(e => e.isReference);
     }
-
   }
 </script>
 

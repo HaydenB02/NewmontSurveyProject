@@ -54,17 +54,14 @@ export default class Controls extends Vue {
   }
 
    /* Customize Scrollbar */
-   /* TODO: get this to overwrite old scrollbar */
-
+   ::-webkit-scrollbar {
+    width: auto;
+   }
    ::-webkit-scrollbar-thumb {
     background: teal;
     border-radius: 10em;
    }
    ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 3em gray;
-    border-radius: 5em;
-   }
-   ::-webkit-scrollbar-button {
-    display: none;
+    color: black
    }
 </style>
