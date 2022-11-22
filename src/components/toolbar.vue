@@ -21,7 +21,7 @@
       </b-form-select>
       
       <!-- Allowed Distance Textbox -->
-      <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true" ></b-form-input>
+      <b-form-input id="difference-input" v-model="allowedDistance" type="number" min="0" onkeypress="return event.keyCode != 13" :lazy="true" ></b-form-input>
       <div v-if="hole != null">
         <h4 v-if="hole.depthUnits == 'METERS'" style="color: teal;">M</h4>
         <h4 v-if="hole.depthUnits == 'FEET'" style="color: teal;">FT</h4>
@@ -117,12 +117,18 @@ export default class Toolbar extends Vue {
   }
 
   set allowedDistance(n: number) {
+    //Account for negatives
+    if(n < 0){
+      n = 0;
+    }
+
     Data.state.allowedDistance = n;
     //Reset a survey so the scene updates
     let resetSurvey = Data.state.surveyGroups.find(e => e.isReference);
     let resetIndex = Data.state.surveyGroups.indexOf(resetSurvey);
     Vue.set(Data.state.surveyGroups, resetIndex, resetSurvey);
     Data.commitResetRange();
+    console.log(Data.state.allowedDistance);
   }
 }
 </script>

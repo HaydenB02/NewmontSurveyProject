@@ -1,0 +1,25 @@
+Initial Setup:
+-2 dropdowns and an input, only the Hole Selector dropdown is currently useable.
+-Hole Selector is a dropdown that allows user to select the hole data to view.
+-User should select hole before continuing.
+
+Survey Viewing:
+-Once a hole is loaded, cards will be displayed in descending priority order containing survey information.
+-The Priority Selector will now be propogated.
+-The Priority Selector is a dropdown with each survey priority, selecting one will change the reference survey.
+-Allowable Distance is a numerical input, will treat any negative inputs as zero.
+-The reference survey is used to check allowable distance of other surveys.
+
+Individual Surveys:
+-Each survey is displayed using a card, labeled with the priority and type of that survey.
+-Each card has a checkbox and dropdown button.
+-The checkbox controls that surveys display. Checked means this priority survey will be displayed on the right.
+-The dropdown button controls the survey data table, displayed inside the card, under the header.
+-The table is editable, just click, type, and click off. Pressing enter does not update.
+-Red highlights mean the point associated with that depth is out of range.
+
+Visual Controls:
+-Click and drag to orbit around the center point of the reference survey.
+-Ctrl click and drag to move the screen, used to look at specific parts of the survey.
+-Two finger pinch on touchpad to zoom in and out.
+-Scroll wheel on mouse to zoom in and out.
