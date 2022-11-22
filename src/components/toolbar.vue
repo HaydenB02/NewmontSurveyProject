@@ -22,7 +22,10 @@
       
       <!-- Allowed Distance Textbox -->
       <b-form-input id="difference-input" v-model="allowedDistance" type="number" onkeypress="return event.keyCode != 13" min="0" :lazy="true" ></b-form-input>
-      <div v-if="hole != null"><h4 style="color: teal;">{{hole.depthUnits}}</h4></div>
+      <div v-if="hole != null">
+        <h4 v-if="hole.depthUnits == 'METERS'" style="color: teal;">M</h4>
+        <h4 v-if="hole.depthUnits == 'FEET'" style="color: teal;">FT</h4>
+      </div>
     </b-form>
 
   </div>

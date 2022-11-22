@@ -1,7 +1,7 @@
 <template>
   <!-- Display Survey Data Cards -->
   <div id="surveys">
-    <survey-card v-for="surveyGroup in surveyGroups" :key="hole.holeRowid + surveyGroup.priority" :card_id="surveyGroup.priority" />
+    <survey-card v-for="surveyGroup in surveyGroups" :key="hole.holeRowid + surveyGroup.priority + selectedSurvey + allowableDistance" :card_id="surveyGroup.priority" />
   </div>
 </template>
 
@@ -26,6 +26,18 @@ import SurveyCard from "./surveys/survey_card.vue";
 export default class Surveys extends Vue {
   get surveyGroups(): Array<SurveyGroup> {
     return Data.state.surveyGroups;
+  }
+
+  get selectedSurvey(): number {
+    let survey = Data.state.surveyGroups.find(e => e.isReference)
+    if(survey){
+      return survey.priority;
+    }
+    return -1;
+  }
+
+  get allowableDistance(): number {
+    return Data.state.allowedDistance;
   }
 
   get hole(): Hole {

@@ -167,7 +167,7 @@ export default class ThreeSetup extends Vue {
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 70%;
+    width: 65%;
     height: 100%;
     background-color: blue;
     overflow-y: hidden;

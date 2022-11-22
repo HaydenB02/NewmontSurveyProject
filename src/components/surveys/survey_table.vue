@@ -12,7 +12,7 @@
       <!-- If not in range, make inputs bold and red -->
       <span v-if="!props.row.point.inRange">
         <span v-if="props.column.field == 'depth'">
-          <span><b-form-input v-model="props.row.depth" id="error" @blur="updateDepth(props)"  /></span>
+          <span><b-form-input v-model="props.row.depth" id="error" @blur="updateDepth(props)" /></span>
         </span>
         <span v-if="props.column.field == 'inclination'">
           <span><b-form-input v-model="props.row.inclination" id="error" @blur="updateIncline(props)" /></span>
@@ -58,22 +58,9 @@
     @Prop({type: Number}) table_id!: number;
     props: any = null;
 
-
     isError(row: any) {
       return !row.point.inRange;
     }
-
-    //Consistently update inRange highlights
-    // @Watch("allowedDistance", {immediate: true})
-    // @Watch("referenceSurvey", {immediate: true})
-    // onErrorChanged(val: any, oldVal: any) {
-    //   console.log('AYO')
-    //   if(document.getElementById("error-checker")){
-    //     let surveyGroup = this.surveyGroup;
-    //     let index = Data.state.surveyGroups.indexOf(this.surveyGroup);
-    //     Vue.set(Data.state.surveyGroups, index, surveyGroup);
-    //   }
-    // }
 
     updateDepth(prop: any) {
       let survey = this.surveyGroup.surveys[prop.index];
