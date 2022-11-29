@@ -4,7 +4,7 @@ import { getStoreBuilder } from "vuex-typex";
 
 //Data Stores
 import { RootState } from "../../store";
-import App, { AppState } from "./app";
+import App from "./app";
 
 //Three Imports
 import * as Three from 'three';

@@ -1,0 +1,19 @@
+File Layout:
+-Every .vue file is laid out in the same format
+-HTML template, lines are grouped together based on display functionality
+-Typescript coding script
+  -Necessary imports
+  -Class definition
+    -Variable declaration
+    -Function definitions
+    -Getters and setters
+-Style script
+
+
+Project Layout:
+-Everything starts in app.vue, which loads controls.vue and three_setup.vue
+  -controls.vue loads toolbar.vue and surveys.vue
+    -toolbar.vue:
+      *Displays titles for the top 3 user inputs as html paragraphs
+      *The hole dropdown is a 
+		
