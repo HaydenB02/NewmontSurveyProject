@@ -18,26 +18,27 @@ Project Layout:
       *The hole dropdown is a form select that grabs the hole, the rowid, the filename, and the holeId
       *The priority dropdown is a form select that grabs the survey and the priority
       *The difference-input is a form input that gets the distance and a number and returns the output 
-    -survey.vue loads survey_card
+    -survey.vue loads survey_card.vue
       *Displays the survey data card grabbing the surveygroup, holeRowid, priority, selectedsurvey, and allowableDistance
       -survey_card.vue loads survey_table.vue
         *Displays labels for the Priority and Survey type
-        *The checkboxes is a from checkbox and just grabs if it is selected
-        *The dropdown is a button that collapses and shows the surveygroup priority
+        *The checkbox is a from checkbox that controls if that survey is selected
+        *The dropdown is a button that controlls the collapsable survey table, calling survey_table.vue
         -survey_table.vue:
           *Does in error check to see if survey is in range
-          *If not in range makes inputs bold and red. When editing inputs it will update the depth, incline, and AziTrueNorth
-          *If in range makes normal inputs. When editing inputs it will update the depth, incline, and AziTrueNorth
-	-three_setup.vue loads survey_model.vue
+          *If not in range makes inputs bold and red
+          *If in range makes normal inputs
+	  *When editing inputs it will update the depth, incline, and AziTrueNorth
+  -three_setup.vue loads survey_model.vue
     *imports three for all 3d components
     *imports orbitControls which animates the survey and allows you to move the survey in every direction
     *imports data form hole, survey, surveyGroup, and ThreeContainer
-    -survey_model:
+    -survey_model.vue:
       *mounted:
         *sets the camera to look at the center of the survey
-        *creates the the sphere, the good mesh, and the bash mesh. These are the materials that create the design of how the surveys will be displayed
+        *creates the the sphere, the good mesh for in range, and the bash mesh for out of range. These are the materials that create the design of how the surveys will be displayed
         *draws first dot after gabbing data from the surveys
-        *Now makes the next dot after checking inRange
-        *draws the line after checking isReference
+        *draw each remaining dot based on in range value
+        *draw the line connecting this dot to the previous dot
       *destroyed:
         *removes surveys that are unselected
