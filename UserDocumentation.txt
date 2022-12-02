@@ -1,3 +1,19 @@
+Key:
+-Table:
+  *Grey text means that point is in range
+  *Red text means that point is out of range
+  *Surveys are displayed in descending priority
+-Models:
+  *The green line is the selected priority survey, used for reference
+  *Blue lines represent all other surveys
+  *Green points mean the point is in the allowable range from the reference survey point at that depth
+  *Red points mean the point is out of this range
+
+Important Notice:
+-Editing the data updates graph properly, but does not the data table's error highlights
+-After quick testing we believe this error only occurs when changing data in the reference survey
+-A simple fix for this is to change either the priority survey or allowable distance to update the tables
+
 Initial Setup:
 -2 dropdowns and an input, only the Hole Selector dropdown is currently useable.
 -Hole Selector is a dropdown that allows user to select the hole data to view.
