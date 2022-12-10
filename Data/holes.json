@@ -1,6 +1,13 @@
 {
     "holes": [
         {         
+            "holeRowid": 8000000001,
+            "holeId": "IT-Presentation1",
+            "project": "AA\u002B",
+            "office": "Auckland",
+            "filename": "IT-Pres1.json"
+        },
+        {         
             "holeRowid": 8000024061,
             "holeId": "NPC01",
             "project": "AA\u002B",
